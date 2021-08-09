@@ -1,0 +1,155 @@
+Assignment
+
+Intro
+Problem Statement
+CRUD Operations
+Database Schema
+Solution Approach
+
+Intro
+
+SQL and NoSQL
+
+Join Queries goes good with SQL - Structured
+
+Large set of data goes good READS and WRITES with NoSQL - Semi Structured
+
+instruction
+
+java application using maven
+
+students need to fill in the respective CRUD
+
+
+
+Problem Statement
+
+1. Has to work with both SQL and NoSQL
+2. Central RDS with MySQL, Hosted by UpGrad
+3. RDS has different Tables
+  a. Mobiles (All info about Mobiles)
+  b. Cameras (All info about Cameras)
+  c. Headphones (All info about Headphones)
+4. All with different tables with atleast one common column i.e. Product ID
+5. Data should be queried from RDBMS and insert into NoSQL MongoDB
+6. Field Names in MongoDB should be same as column name in RDS
+7. Create Collection in MongoDB named "products"
+8. Each document should have more than one field named "Category"
+9. for mobiles will be mobiles, Cameras will be Cameras, Headphones will be
+Headphones
+
+
+CRUD Operations
+
+Task-01: Data Loading
+
+Use the Java API of MySQL and MongoDB and load all the attributes of the
+RDS tables - mobiles, cameras and headphones into a new products collection
+in MongoDB. To differentiate between the products in MongoDB, you need to
+add an additional field called ‘category’ in your 'products' collection.
+The category value will be ‘Mobiles’, ‘Cameras’ and ‘Headphones’,
+for mobiles, cameras and headphones respectively.
+
+
+Task-02: Queries
+
+Write CRUD Operations of the Following Queries on the data stored in MongoDB
+  a. QUERY-01 - Show complete product inventory with common attributes
+  b. QUERY-02 - Get the information of first five products under category "Mobile".
+  c. QUERY-03 - Get the products ordered by category without their auto-generated
+  `_id` column in MongoDB
+  d. QUERY-04 - Get the product count of every category
+  e. QUERY-05 - Find all wired Headphones
+
+Connection String
+jdbc:mysql://pgc-sd-bigdata.cyaielc9bmnf.us-east-1.rds.amazonaws.com:3306/pgcdata
+
+username: student
+password: STUDENT123
+
+
+Database Schema
+
+Mobiles
+
+ProductId
+Title
+Manufacturer
+NetworkTechnology
+Dimensions
+Weight
+Display
+Bluetooth
+Sensors
+OS
+Chipset
+CPU
+GPU
+Memory
+Camera
+Battery
+
+
+Headphones
+
+ProductId
+Title
+Manufacturer
+HeadPhoneType
+Battery
+Warranty
+ConnectorType
+WithMicrophone
+ItemWeight
+Color
+AdditionalFeatures
+
+
+Cameras
+
+ProductId
+Title
+Manufacturer
+EffectivePixels
+Zoom
+Dimension
+Weight
+VideoResolution
+ShutterSpeed
+Battery
+
+Terminal
+
+  mvn clean install - Building the application
+mvn exec:java -Dexec.mainclass="dragon.PojaApp"
+
+
+
+https://www.codejava.net/java-se/jdbc/java-connecting-to-mongodb-database-examples
+
+
+
+LIVE SESSION - 31st Jul '21
+
+mysql -h pgc-sd-bigdata.cyaielc9bmnf.us-east-1.rds.amazonaws.com -u student -p pgcdata
+
+https://docs.mongodb.com/manual/reference/connection-string/
+
+db.products.find({},{_id: 0}).limit(3).pretty().sort({'Category': 1});
+
+db.products.find({'Category': 'Mobile'}).limit(3).pretty()
+
+https://docs.mongodb.com/manual/reference/command/aggregate/
+
+https://docs.mongodb.com/manual/reference/operator/aggregation/
+
+
+for (Document document: productCollection.find()){
+            System.out.println(document.toJson());
+        }
+
+http://mongodb.github.io/mongo-java-driver/3.4/driver/tutorials/perform-write-operations/
+
+https://docs.mongodb.com/manual/reference/method/db.collection.findAndModify/
+
+https://docs.mongodb.com/drivers/java/sync/v4.3/usage-examples/find/

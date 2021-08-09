@@ -1,0 +1,75 @@
+Live Session
+
+pyspark, python
+
+algorithm is important like petrol for a car
+
+ML -- Data is very important
+
+SQL - MySQL, Postgres SQL, Oracle
+
+Redshift - DB
+
+SQL is foundation.
+
+Data Validation
+Data Modelling
+Data Exploration and Analysis
+Data Cleaning
+Data Collection
+Define Business Req.
+Deploy and Optimization
+
+SQL -- DDL - Data Definition Language
+    -- DTCL - Data Transaction Control Language
+    -- DML - Data Manipulation Language
+    -- DCL - Data Contol Language
+
+Columns - Attributes
+Rows - Tuples
+
+create database <database_name>
+drop database <database_name>
+
+create table cust2 as select *,`MR` || cust_q as Name2
+
+https://www.w3schools.com/sql/sql_alter.asp
+
+grant access on customer to <user>;
+grant access on customer to <public>;
+grant select on customer to <user>;
+
+commit
+rollback
+savepoints
+
+https://www.w3schools.com/sql/sql_create_index.asp
+
+
+from
+where -- row level
+group by
+select
+having
+limit
+
+FROM clause
+ON clause
+OUTER clause
+WHERE clause
+GROUP BY clause
+HAVING clause
+SELECT clause
+DISTINCT clause
+ORDER BY clause
+TOP clause
+
+cardinal condition - whatever the select student group by student
+
+aggregate function in having clause
+
+
+select sales_anme,sales_doll, rank() over (order by sales_doll desc) as rank
+from <table> -- RANKING
+
+https://sqlzoo.net/

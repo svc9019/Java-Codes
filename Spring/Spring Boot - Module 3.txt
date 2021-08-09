@@ -1,0 +1,375 @@
+Module 3
+
+What is Spring Boot?
+
+How Spring Boot is different from Spring?
+
+Spring Boot Framework
+
+Web Application and Different Layer of Web Application
+
+Create Simple Web Application
+
+Different Ways in which Spring Boot Project can be configured and developed
+
+Concept of Profiles @Profiles annotation
+
+
+Spring Boot: Spring Boot is better and lighter version of Spring
+
+Excess Configuration rescues heavy Configuration
+
+Spring Boot - Provides the boilerplate configuration
+
+Spring - Eliminates the need of Boilerplate configurations for loosely coupled
+applications
+
+Spring Boot - Eliminates the need of Boilerplate configuration for Spring
+applications
+
+Spring Boot inbuilt brings in all the feaures of spring
+
+It is sub-project of Spring
+
+Opinionated view, Auto-configure, Smart Assumptions
+
+Helps in easy and faster development
+
+It is like autocomplete feature like Google Search
+
+Features
+ - Auto-Configuration
+ - Standalone
+ - Opinionated
+ - Integration with other framework
+ - Starter Project (Restful API)
+ - Logging and Security
+
+ https://medium.com/swlh/spring-vs-spring-boot-826fcfe21522
+
+ https://medium.com/dev-genius/features-that-every-developer-must-know-about-spring-boot-c1c0d7f1c0a8
+
+
+ Spring Boot Project creation
+
+Methods of Creating
+
+ 1. Spring Boot Initializer
+ 2. Starter Project Wizard of intellij or Eclipse
+ 3. SB CLI (a command-line interface to build SB application using Groovy)
+ 4. SB Maven Project
+
+
+ 1. SB Initializer - https://start.spring.io/ - Follow the Instruction
+
+SB Starters - POM File contains all the dependencies jars
+Spring-Boot-Starter-* -- Start with this line
+
+@SrpingBootApplication is a combination of the below annotation feature
+@EnableAutoConfiguration
+@ComponentScan
+@Configuration
+
+
+Embedded Servers
+Can help run the SB Project easily.
+
+SB Dependency Management
+No need to mention the versions
+Need to specify the version of spring-boot-starter-parent
+SB will decide on suitable dependencies
+when you change version SB will automatically upgrade the dependencies
+still need to add version this can be done
+
+When building Web Application (Conventional Method)
+1. Develop the Web Application
+2. Package it as War
+3. Download and install Web Server
+4. Configure the Web Server
+5. Deploy the application
+6. Run the server which in turn runs the application
+
+Spring Boot
+
+Web application packaged as Jar
+
+Jar file contains both Web Server as well as Application Code
+
+SB in two steps
+1. Develop Web Application
+2. Click run( like normal java application)
+
+SB Supports three Types of servers
+1. Embedded servers / containers for building applications
+  Tomcat, Undertow, and Jetty
+2. Tomcat is Opinionated default Embedded server for SB
+3. Choice of container depends on factors such as memory requirement
+
+Spring Boot Auto-Configuration
+
+Annotating with @SpringBootApplication in main class
+
+followed by three annotation
+1. @SpringBootConfiguration - Enables Java based application in main class
+2. @EnableAutoConfiguration - Triggers Auto Configuration
+3. @ComponentScan - Enables to scan the @Component Classes present in the
+package than contains Main Class or its Sub Classes
+
+Addl. Reading  - https://docs.spring.io/spring-boot/docs/current/reference/html/
+using-spring-boot.html#using-boot-using-springbootapplication-annotation
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto
+-embedded-web-servers
+
+
+Web Application
+
+Different Layers of a Web Application
+
+Application installed on remote machine and hosted using web servers like
+Tomcat, Jetty known as Web Application
+
+It can be accessed via Internet via Http / Https
+
+Web Browser to access the Application
+
+
+Two segments
+1. Backend Segment - Responsible for handling logics, Code runs on the server and
+interacts with DB
+2. Front-end Server - Controls how the web pages will be rendered in the
+Browser
+
+Layered Architecture
+
+Build Backend and Frontend of a web application separately (Loosely Coupled)
+
+Layered Architecture is one such technique that helps to build loosely Coupled
+applications by breaking down an application into layers, Different Component
+into different layers
+
+These Layers will be connected to each other in a loosely coupled manner using
+the concepts of IoC and DI
+
+Three Different Layers
+
+1. Data Access layer  - Connecting to DB
+2. Service / Business Layer - Computational Layer
+3. Presentation / Controller Layer - Entry Point of End User - Accepts Client
+Requests
+
+
+High level Architecture
+           (Http Requests       (Domain Objects)     (Data Transfer Objects)
+             Response)
+Presentation layer -- Controller Layer -- Business/Service Layer -- Data Access Layer
+(Entities)
+-- DB
+
+Data Access Layer - Part of a Backend Layer, Has all the CRUD Operations, interacting
+with DB, Contains all the Classes, Component inside this will not be dependent
+on other two layer, Considered as Abstract Layer
+
+Service Layer - Also part of Backend Layer, Responsible for processing client
+requests, application has separate package with contains all the Classes
+whose objects perform the business logics, Components of Data Access layer will be
+injected using IoC and DI
+
+Presentation Layer - Part of Backend and Frontend Layer. Controller layers
+or endpoint which is used by frontend layer to send requests and wait for response
+This layer will expose the endpoint to the frontend
+separate package resposible for exposing the endpoints
+Component inside this layer uses service layer components to process the request and
+generate the response, this also follows DI and IoC concepts
+
+
+Dependency Flow
+
+Data Access Layer - No Dependency --> Injected to --> Service Layer --> Injected to --> Controller
+Layer
+
+Addl. Reading - https://blog.stackpath.com/web-application/
+https://stackoverflow.com/questions/59942/what-is-the-purpose-of-a-data-access-layer
+
+
+
+Creating a Web Application
+
+1. Run the simple code and review it that works
+by default the SB adds all dependencies including Web Server
+Review of @SpringBootApplication
+
+2. In this more of creating web server and Restful API
+@RestController - Creates Endpoints
+@RestMapping - Create API Interface
+
+
+How to Configure Spring Boot Project
+
+Application.Properties - This empty by Default
+
+SB first checks this file whether any bean is created, If not the SB will
+use default beans
+
+server.port=8081
+spring.datasource.url=jdbc:mysql://localhost:3306/test
+spring.datasource.username=root
+spring.datasource.password=root
+
+intuitive
+
+
+Alternatives:
+
+CLI arguments
+java System Properties
+Env file
+YAML file
+
+Spring Profiles
+
+custom configuration using Profiles
+
+Multiple stages - Dev, Testing and Prod
+
+Different Stages need to configure the application
+Modify Custom Configuration in Application.Properties (Manual Effort)
+
+This is where profiles Helps
+
+environment-specific custom configurations
+application-{profile}.properties
+
+there can be multiple property files
+
+Syntax -- @Profile("Profile-Name")
+
+Set Active Profiles in one of the following ways
+
+Java System Properties
+- DSpring.profiles.active=dev
+Environment Variables
+- export spring_profiles_active=dev
+Properties Files
+- spring.profiles.active=dev
+
+
+Command Line Arguments
+
+prefix --
+
+to run the application in port 8081
+
+java -jar <Name of the jar> --server.port='8081'
+
+Command line take precedence over any other source of properties
+
+
+Java System Properties Set in Two Ways
+
+java -Dserver.port="8081" -jar <nameOfJar>
+
+System.setProperty("server.port","8081")
+
+Access the Java System Property
+
+System.getProperty("server.port")
+
+
+
+Environmental Variables
+
+need to set variables before running the application
+
+export SERVER_PORT="8081"
+
+YAML
+
+It is more convenient dealing with data of hierarchy configuration
+
+Key:value pair
+
+Spring
+  datasource
+    url:jdbc:mysql://localhost:3306/test
+    username:root
+    password:root
+
+Absence of repetitive prefixes and hierarchy
+To use YAML Configuration, Add SnakeYAML library to the class path
+better choice for interacting with other frameworks
+since libraries can be used only by java projects
+load using YamlPropertiesFactoryBean(load YAML as Properties)
+YamlMapFactoryBeam(load YAML as Map)
+
+
+Addl.Reading - https://docs.spring.io/spring-boot/docs/current/reference/html/
+spring-boot-features.html#boot-features-profiles
+
+
+Which of the following statements regarding Spring profiles is true?
+
+Profiles are used to specify environment-specific properties
+You can have multiple profile-specific application.properties files.
+
+Some of the important points from this session can be summarised as follows:
+
+Spring Boot can further simplify a developer’s job by handling the boilerplate configuration, which you need to write in the Spring framework. Spring eliminates the need for writing boilerplate code. In addition to this, Spring Boot eliminates the need for writing boilerplate configurations.
+
+Spring Boot takes an opinionated view of building Spring applications, which means that Spring Boot comes with certain default configurations, and it makes some smart assumptions to auto-configure your application.
+
+Spring Boot projects can be created in a number of ways using the following:
+
+Spring Boot Initializr
+
+Spring Starter Project Wizard Of IntelliJ or Eclipse
+
+Spring Boot CLI
+
+Spring Maven Project
+
+In Spring Boot, you only need to mention the starter POM using the <dependency>
+tag, which will download all the related dependencies into the project.
+
+Using Spring Boot, you can package your web applications as jar files containing
+ both the code and an embedded server. To ensure that your application is
+ running in the auto-configure mode, you can use the @SpringBootApplication annotation.
+
+A web application is an application that is hosted on a remote server
+and can be accessed via the Internet.
+
+The different layers of a web application are as follows: data access layer,
+ service layer and presentation layer. The components responsible for
+ interacting with the database are a part of the data access layer.
+ The service layer consists of all the components that are responsible
+  for processing the client request, based on the business logic,
+   and preparing the response. The presentation layer consists of
+   components that expose the end points to the front-end section of a web application.
+
+The components of the data access layer are injected into the components
+of the service layer. Similarly, the components of the service layer are
+injected into the components of the controller layer.
+
+You can configure the project using the following:
+
+Application.properties file
+
+Command-line arguments
+
+Java system properties
+
+Environment variables
+
+YAML files
+
+By using the @Profile annotation, you can control the bean creation process.
+ You can specify the profiles for which you want the bean to be created,
+ and the bean will be created only when the active profile is set to that profile.
+
+ spring.h2.console.enabled=true
+
+ https://github.com/ajinkya-xyz/share/blob/main/Notes.pdf
+
+ https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
+
+ https://github.com/spring-io/sagan

@@ -1,0 +1,12 @@
+Math Functions
+abs(): Returns the absolute value of a number
+ceil(): Returns the smallest integer value greater than or equal to the input number
+floor(): Returns the largest integer value not greater than the argument
+round(): Rounds a number to a specified number of decimal places
+rand(): Returns a random floating-point value between 0 and 1
+pow(a, b): Returns the value of a^b
+
+
+select officeCode, max(mycount) from (select officeCode, count(id) mycount from employees group by officeCode) maxcount;
+
+select officeCode, count(*) from employees group by officeCode order by officeCode;

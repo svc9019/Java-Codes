@@ -1,0 +1,65 @@
+Steps while creating JDBC Application
+
+1. Import the SQL Package java.sql.* - download all the required / classes
+2. Register JDBC Drivers - it can connect to various DB's MySQL, Postgres, Oracle (Java to work)
+3. Create a Connection to DB - Create Query (SQL)
+4. Execute the Query
+5. Extract the result from using Query
+6. Finally Close the Connection to DB
+
+Types of JDBC Drivers
+
+1. JDBC / OBDC Bridge Drivers - Only Development and Testing not Prod Setup
+2. JDBC Native API (Partial Java Drivers) - Type 3 / Type 4 Wrapper not Available - Connect any DB
+3. JDBC-Net Pure Java (Full Java Drivers) - Access Multiple DB's
+4. 100% JDBC Drivers - Oracle, MySQL and IBM
+
+SQL via JDBC
+
+Three Interfaces
+1. Statement - Static and general Purpose SQL Statements
+2. Prepared Statement - SQL Statement to be used multiple times
+                      - accepts input parameters at runtime.
+3. Callable Statement - Access DB Stored Procedures
+
+JDBC - Handson
+
+// Prepared Statement
+
+String preSQL = "select student_id, student_name from student where student_id=? and student_name=?"
+
+PreparedStatement preparedstatement = connection.preparedStatement(preSQL);
+
+preparedStatement.setInt(102);
+preparedStatement.setString("Vageetha");
+
+Resultset resultset = preparedStatement.executeQuery(preSQL);
+
+while(resultset.next()){
+            System.out.println("Student ID "+ resultset.getInt("student_id") + "\t");
+            System.out.println("Student Name "+resultset.getString("student_name")+ "\t");
+            }
+
+preparedStatement.close();
+
+
+Resultset --> metadata
+
+ResultsetMetaData resultSetMetaData = resultset.getMetaData();
+
+
+Truth about Resultset
+
+1. ResultSet holds data retrieved from a database after you execute an SQL query using Statement objects.
+2. It acts as an iterator to allow you to move through the data.
+3. The java.sql.ResultSet interface represents the result set of a database query.
+
+
+Statement can execute parameterized queries
+1. PreparedStatement
+
+https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-usagenotes-basic.html
+
+https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-reference-implementation-notes.html
+
+https://medium.com/@ghl234/using-java-to-connect-to-your-database-jdbc-api-c932bd18b7d3

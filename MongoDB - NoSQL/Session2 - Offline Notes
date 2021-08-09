@@ -1,0 +1,348 @@
+Session 2 - MongoDB -- Document Based
+
+Operator in Cloud - AWS, SaaS and IaaS
+
+History
+1. Open Source, Document-Based
+2. Created in Year 2007, Humongous amount of data
+3. high performance, Scalability and data Modelling
+
+Structure
+
+1. Data stored in form of Collection, Collection stores information of several
+records
+2. Record in collection stored as Document, Document Stored as Key:Value.
+
+Collections-
+Feedback:
+Each database consists of Collections which store
+the information in the form of documents, similar to how tables
+in SQL store information in the rows.
+
+Working with MongoDB over Cloud
+
+Why Cloud - flexible, affordable and scalable Management
+Dev Team working on large set can store their data on cloud, critical massive
+data is stored reliabily.
+
+Two ways to make use of MongoDB
+1. Platform as a service
+2. Infra as a service
+
+1. Amazon DocumentDB - Platform as a Service - Scalable Massively
+ - Cloud based DB Service Compatible with MongoDB. It is fast, Scalable, HA and
+   fully managed document db service that supports.
+ - Easy to store and query JSON Data as it is a document db
+ - It is not free tier thus incur costs
+ - Access within VPC only, So it is bit tricky to access from local system.
+
+2. MongoDB on EC2 Instances
+  - Custom made service using Amazon EC2 and Work with MongoDB
+  - Individual Requirement and thus reducing costs.
+
+
+Practical Session
+
+yum update
+add mongo repo
+yum install mongodb-org
+
+use demoDB
+db.createCollection("learners_profiles")
+show collections
+
+show dbs
+
+quit()
+
+Refer -- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-amazon/
+
+In a document-based database, data is stored in a denormalized format - True
+DocumentDB is a document database and, it fully supports MongoDB database.- True
+
+use testDB - Use or Create testDB - Creates Database
+
+db.createCollection('Orders') - creates collection or table
+
+to add data to collection
+
+db.Orders.insert(
+{
+  "OrderID" = "TCE-001",
+  "Name" = "Plantronics",
+  "Sales" = 2400,
+  "Profit" = 760
+}
+)
+
+to view the data we can use db.Orders.find()
+
+Each item in document is in the form of a key:pair value.
+
+use  <databasename>: This command is used to switch to the database mentioned in
+the command or create a new database by the name passed in the command
+db.createCollection('<collection name>'): Creates a new collection
+with the given name
+db.Collection.insert(): Inserts a document into the collection
+db.Collection.find(): Finds all the documents present in the given collection
+
+
+Comparison -- https://docs.mongodb.com/manual/reference/sql-comparison/
+
+
+C - db.collection.insert()
+R - db.collection.find() - by default 20 records are displayed.
+    db.collection.find().limit(7) - display 7 records
+    db.collection.find().limit(5).pretty() - human readable format
+U - db.collection.update()
+D - db.collection.remove()
+
+
+Data types supports
+
+_id -- Primary Key - 24-digit unique identifier.(Object Type)
+4-byte timestamp value
+5-byte random value
+3-byte Inc Counter initialized random value
+
+
+String - Most used Datatype
+Integer - Numerical Value
+Boolean - True / False
+Double - Floating Values
+Object - Embedded Object
+Arrays - Multiple Values into One Key
+Date - Store Current Date and Time
+
+
+Dataset
+1. Order_ID - Country-Year-OrderID
+2. Segment - Corporate / Home-Office
+3. Product_ID - Product Category-SubCategory-Product-No
+4. Sales - No of Sales
+5. Profit - Profit Achieved
+
+
+Do winscp to upload Json file.
+
+mongoimport --db <dbname> --collection <collectionname> --file <filename.json>
+--jsonArray (File Format)
+
+
+Comparison Queries
+
+1. Equalto - $eq
+2. Greaterthan - $gt
+3. Greaterthan Equalto - $gte
+4. Lessthan - $lt
+5. Lessthan Equalto - $lte
+6. Not Equalto - $neq
+7. In - $in
+
+Intro Guide - https://docs.mongodb.com/manual/introduction/
+
+db.collection.find({<field>:{<operator>:<value}}) - using Operator
+
+ex. db.purchase.find({'Sales':{$lte:15}}).limit(5).pretty()
+
+Count
+
+db.collection.find({'<field>':{<condition>:<value>}}).count() - Count of Values
+
+ex. db.purchase.find({'Sales':{$lte:15}}).count()
+
+
+Sorting
+
+db.collection.find({'<field>':{<condition>:<value>}}).sort({<field>:<1/-1>})
+1 --> Ascending Order
+-1 --> Descending Order
+
+ex. db.purchase.find({'Sales':{$lte:15}}).sort({'Sales':1})
+
+Query using muliple parameters
+
+db.collection.find({'<field1>':{<condition>:<value>}}).sort({<field2>:<1/-1>})
+
+db.purchase.find({'Sales':{$lte:15}}).sort({'Profit':-1})
+
+Question 1:
+db.purchase.find({'Segment':'Corporate'}).sort({'Sales':-1}).limit(1)
+
+Question 2:
+db.purchase.find({'Profit':{$gte:200}}).count()
+
+Logical Operator - AND OR NOT
+AND - All condition is True
+Syntax - db.collection.find({$and:[{<condition>:<value>},{<condition>:<value>}]})
+
+Ex. db.purchase.find({$and:[{'Profit':{$gte:200}},{'Sales':{$gte:3000}}]}).count()
+
+OR - One Condition is True
+Syntax - db.collection.find({$or:[{<condition>:<value>},{<condition>:<value>}]})
+
+db.purchase.find({$or:[{'Profit':{$gte:200}},{'Sales':{$gte:3000}}]}).count()
+
+NOT - Condtion is False
+Syntax - db.collection.find({<field>:{$not:{<condition>:<value>}}})
+
+Ex. db.purchase.find({'Profit':{$not:{$gte:10}}})
+
+
+Question 1
+db.purchase.find({$and:[{'Profit':{$gte:100}},{'Sales':{$lte:5000}}]}).count()
+
+Question 2
+method 1
+db.purchase.find({$or:[{'Segment':'Consumer'},{'Segment':'Home Office'}]}).sort({'Sales':-1}).limit(1)
+method 2
+db.purchases.find({'Segment': {$in:['Consumer','Home Office']}}).sort({'Sales':-1}).limit(1)
+
+Not IN
+Syntax
+db.collection.find({$field1:{$nin:[value1,value2....valuen]}})
+
+Ex. db.purchase.find({'Segment':{$nin:['Consumer','Home Office']}}).sort({'Sales':-1}).limit(1)
+
+IN
+Syntax
+db.collection.find({$field1:{$in:[value1,value2....valuen]}})
+
+Ex. db.purchase.find({'Segment':{$in:['Consumer','Home Office']}}).sort({'Sales':-1}).limit(1)
+
+Aggregation - Summarizing Information present in the Document.
+
+sum,avg,max,min,
+
+Aggregation is done in stages.
+
+aggregation pipeline - Advantage is to work on smaller / series of data
+
+Syntax
+db.collection.aggregate([{stage1},{stage2},...{stagen}])
+
+for ex. if we want to find the no of sales happened in year 2014.
+
+Stage 1(Original Data) -- Stage 2(finding year 2014) -- Stage 3(Avg Sales and each segment)
+
+Ex. Syntax
+db.purchase.aggregate([{$group:{_id:'$Segment',average:{$avg:'$Sales'}}}])
+
+
+Question 1:
+
+db.purchase.aggregate([{$group:{_id:'$Segment',AvgSales:{$avg:'$Sales'},AvgProfit:{$avg:'$Profit'}}}])
+
+
+Feedback: The category which has the highest average Profits also has the highest average Sales
+
+Question 2
+
+Adding Intelligence
+
+You can use this property intelligently to compute the number of items in each
+category of a particular field. For example, if you want to compute the number
+of documents that belong to each category - Corporate, Consumer and Home Office,
+directly using the aggregate command without running multiple queries,
+then you can use the following command.
+
+Syntax: db.purchases.aggregate([{$group:{_id:'$Segment',total:{$sum:1}}}])
+
+Here the $sum operator will keep adding 1 as many times as there are documents
+in a particular category, for each of the categories in the Segment field.
+And in the result, we'll get the total number of documents belonging to
+each category.
+
+Session 2 - Addl. Lab Session
+
+Question 1:
+What is the total count of orders present in purchases collection where
+profit >= 2000 and profit <= 3000?
+
+db.purchase.find({$and:[{'Profit':{$gte:2000}},{'Profit':{$lte:3000}}]}).count()
+
+Question 2:
+Find the total number of orders in purchases collection whose ‘Segment’
+is ‘Consumer’.
+
+db.purchase.find({$and:[{'Segment':{$eq:'Consumer'}}]}).count()
+
+Question 3:
+
+Find the total number of orders in purchases collection whose ‘Segment’ is
+either ‘Consumer’ or ‘Corporate’.
+
+db.purchase.find({$or:[{'Segment':{$eq:'Consumer'}},{'Segment':{$eq:'Corporate'}}]}).count()
+
+Question 4
+
+What is the most and the least expensive sales (maximum and minimum value
+of profit) that has happened across all the orders?
+
+
+db.purchase.aggregate([{$group:{_id:null,maxsales:{$max:'$Profit'},minsales:{$min:'$Profit'}}}])
+
+Question 5
+
+What is the total count of orders present in purchases collection
+where Profit > 2000 or Sales <= 3000?
+
+db.purchase.find({$or:[{'Profit':{$gte:2000}},{'Sales':{$lte:3000}}]}).count()
+
+Question 6
+
+What is the total count of orders present in purchases collection
+where sales value is not less than 100?
+
+db.purchase.find({'Sales':{$not:{$lt:100}}}).count()
+
+Question 7
+
+Write a Mongo query to find the orders that have a sales value greater than
+500. Then, sort the documents received on the basis of profit in ascending
+order, and print them in pretty manner.
+
+db.purchase.find({'Sales':{$gt:500}}).sort({'Profit':1}).pretty()
+
+Question 8
+
+What is the total profit earned across all the orders?
+
+db.purchase.aggregate([{$group:{_id:null,Total_Sales:{$sum:'$Profit'}}}])
+
+Question 9
+
+Create a database named ‘assignment’ and create a collection named ‘books’.
+Then, store the information given below about the books in the collection.
+
+[
+ {
+   "Book ID": "IN-2014-76016",
+   "Author": "J K Rowling",
+   "Pages": "556",
+   "Price": 460,
+ }
+]
+
+use assignment
+db.createCollection('books')
+db.books.insert({"Book ID": "IN-2014-76016","Author": "J K Rowling",
+"Pages": "556","Price": 460})
+
+use assignments
+db.books.insert ({ 'Book_ID': 'IN-2014-76016', 'Author':'J K Rowling',
+'Pages':556, 'Price':460})
+db.books.find()
+
+
+Question 10
+
+Update the number of pages from 556 to 600.
+
+db.books.update({'Pages':"556"},{'Book_ID': 'IN-2014-76016', 'Author':'J K Rowling','Pages':600, 'Price':460})
+
+use assignments
+db.books.update ({'Book_ID' : 'IN-2014-76016'},{ 'Author': 'J K Rowling', 'Pages':600, 'Price':460})
+db.books.find()
+
+https://docs.mongodb.com/manual/reference/command/update/

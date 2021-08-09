@@ -1,0 +1,68 @@
+DB Notes
+
+1. Views. Creating Temp table of selective columns form for viewing only from main table. which
+has no storage  - logical / Virtual table
+
+create view <temp_table_name> as select s2.student_name,s1.salary,s3.roommate_id
+from salary s1
+join student s2 on s1.student_id = s2.student_id
+join roommate s3 on s1.student_id = s3.student_id
+where s1.salary = salary order by s3.student_id;
+
+
+drop view <temp_table_name>
+
+https://dev.mysql.com/doc/refman/8.0/en/views.html
+
+True
+A view derives its data from the base tables(s).
+A view is updatable if it has been defined from a single relation.
+Select statements used in the view definition cannot include ORDER BY clause.
+
+False - A view contains a copy of the data.
+
+https://www.w3resource.com/index.php
+
+Quiz 1
+
+use upgrad;
+
+# Write your code below
+select min(priceEach*quantityOrdered),max(priceEach*quantityOrdered)
+from orderdetails
+
+Quiz 2
+
+use upgrad;
+
+# Write your code below
+
+select round(sum(priceEach*quantityOrdered),0) as totalAmount,
+round(avg(priceEach*quantityOrdered),0) as avgAmount from orderdetails
+
+Quiz 3
+
+use upgrad;
+
+# Write your code below
+select email from employees where officeCode=6 || reportsTo = 1088
+order by firstName desc;
+
+
+select s1.student_name from student s1
+join salary s2 on s1.student_id = s2.student_id
+join salary s3 on s3.salary = s2.salary
+where s3.student_id != s1.student_id
+order by s1.student_id;
+
+Same Salary
+
+select student_name
+from student
+where student_id in (select r.student_id
+from roommate r
+inner join salary s
+on r.student_id = s.student_id
+inner join salary s2
+on r.roommate_id = s2.student_id and s.salary = s2.salary)
+order by student_id;

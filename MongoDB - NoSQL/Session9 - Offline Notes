@@ -1,0 +1,222 @@
+Session 9
+
+Replication and Sharding
+
+Two Imp. Methods
+  - High Scalability
+  - Robust Performance
+
+(replication and sharding)
+
+What replication means and replica set architecture?
+
+Replication: Create replica or duplicate the given data
+
+Has significant way to ensure data availability and data redundancy
+
+Refers to creation and maintaining replica sets
+
+replica set is group of mongod process maintain the same dataset
+
+useful in prod enviroment as it provides high redundancy and availability
+
+replica - copy of data is secondary data
+
+replica set consists of primary and 2 or more secondaries
+
+all of them have same collection or documents, the process of creating
+dataset on different servers is called replication.
+
+Advantages
+ - Data availability
+ - Improve Efficiency
+
+Replica Set architecture
+
+Only Primary Receives write operation
+secondary only accept read operation
+
+primary records all the write operations in operations log or oplog
+
+secondary make the replica of primary's operation log and make exact changes
+to their own replica sets so that it reflects the primary data set.
+
+
+Election of Primary
+
+as discussed, primary does write operations and secondary does read operations
+
+in case if the primary goes down, election will be called for primary i.e. write
+operation, till this time write operation will be stalled
+
+https://docs.mongodb.com/manual/core/replica-set-elections/
+
+Quiz 1
+
+Replica Set Architecture
+How is it ensured that the write operations performed on the primary
+node reflects in the secondary nodes?
+
+After all the write operations are performed on the primary node,
+the secondary nodes replicate the write operations from the
+operations log or oplog.
+
+Feedback:
+The primary node records all the write operations in the
+operations log or oplog. After all the write operations are performed
+on the primary node, the secondary nodes replicate the write operations
+from the oplog.
+
+
+Quiz 2
+
+Never Let You Down
+What happens when the primary node goes down?
+(More than one option may be correct.)
+
+
+If the primary node is down, the secondary nodes call for an
+election to become the primary node.
+
+
+Feedback:
+If the primary node is down, the secondary nodes call for
+an election to become the primary node so that the write operations
+can continue.
+
+Till a secondary node is elected as the primary node,
+no write operations can be performed but read operations still work.
+
+Feedback:
+Correct! Since read operations are anyway performed on secondary nodes,
+the read operations still function. The write operations are however
+stalled until a new primary node is elected.
+
+
+Sharding
+
+Concept of sharding was essentially developed from the problem of scalability
+than plagued RDBMS
+
+Before sharding need to know on Scaling
+
+High Query - CPU Challenge
+
+Veritical Scaling - CPU, Mem
+
+Horizontal Scaling - Dividing the entire data and workload over multiple servers
+to keep the demand.
+
+Divide data using certain logic storing in multiple machines this process is
+sharding
+
+Supports huge dataset with high write and read operations
+
+dividing entire collection into smaller chunks and storing each of these in
+different replica sets
+
+querying take place on particular shard not on the entire collection (Improve
+Query Performance)
+
+
+sharded cluster in mongodb
+
+1. shard - a portion of entire data is collected in a shard which can be
+deployed as replica set
+
+2. Mongos - act like router, interface between client application and sharded
+cluster, routes query from client to the corresponding shard for operation
+
+3. Config Server - Store metadata and configuration settings of entire
+sharded cluster
+
+
+Sharding
+Which of the following is the advantage of using sharding?
+
+The read operations execute faster due to sharding.
+
+Feedback:
+Since the entire collection of a database is divided into several chunks
+and then each of these chunks is stored in separate replica sets or shards,
+the querying performance improves as it runs only on a specific shard
+and not the entire collection.
+
+Once the user enters a command, how does
+mongo know which shard to perform the operations on?
+
+The config server between the mongo interface and the
+shards provides this information.
+
+Feedback:
+The config server between the mongo interface and
+the shards contains metadata and configuration settings
+for the entire sharded cluster which helps in the identification
+of the right shard.
+
+
+Shard Key
+
+Unqiue idenfier with the help of shard Key
+
+two types
+
+Hash Based Key - Create a Hash value of the given field chosen
+
+Range based shard key - dividing data into ranges based on shard key values
+
+Query from a Sharded Application
+
+  - Query is made by the client application which should contain the shard
+  Key
+
+  - When a query includes shard key, mongos using config database to route the
+  query to the corresponding shard instead of entire collection
+
+  - Query results are then routed back to the client through the mongos
+
+
+Advantages of Sharding
+
+1. Helps to scale the systems theoretically there no limit of data
+2. High availability
+3. Read / Write can scale horizontally.
+
+
+Quiz 1
+
+Replica Set Architecture
+In a replica set, the secondary node would only receive the read operation.
+
+True
+
+Feedback:
+The write operations in a replica set are received by the
+primary node whereas the secondary node receives the read operations.
+
+Quiz 2
+
+Scaling systems
+Which of the following methods belong to the vertical system scaling?
+
+
+A - Increasing the CPU of a single server
+B - Increasing the storage capacity of a single server
+
+D - Both A & B
+
+Feedback:
+When you increase either the storage capacity or the CPU
+of a single server, you're generally referring to performing vertical scaling.
+
+Quiz 3
+
+Sharded Cluster
+The sharded cluster acts consists of
+
+mongos
+shard
+config server
+
+A sharded cluster consists of all the three components -
+shard, mongos and the config server.

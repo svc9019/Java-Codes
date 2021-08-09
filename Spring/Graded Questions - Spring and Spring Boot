@@ -1,0 +1,113 @@
+Graded questions
+
+Which of the following is not a feature of tightly coupled code?
+False: Adding a new feature to the existing code is extremely easy.
+
+True:
+If a single component fails, then other components are also affected.
+A particular component of the system is difficult to reuse.
+A particular component is difficult to test.
+
+Suppose you have decided to use the Spring framework for your next Java project.
+ Your colleague asks you the reason for using the Spring framework.
+  Which of the following points would you mention to justify your choice?
+
+It helps you focus on the business logic rather than the boilerplate
+code associated with it.
+
+
+It helps you adhere to industry standards, such as loosely coupled code,
+separation of concerns and proper configuration management.
+
+
+Which of the following classes/interfaces provides developers access to the
+Spring beans in the application code?
+
+ApplicationContext
+
+
+Suppose your class depends on a Student bean; however, there are two Student
+beans available with different names: Student1 and Student2 in the same
+package. Which annotation should be used along with the @Autowired annotation
+to guide the application to choose the bean named Student1? Choose the
+correct option from those given below.
+
+
+@Qualifier
+
+
+Suppose you are working on an application that involves encrypting passwords
+before storing them in the database. The encryption part is carried out by a
+PasswordEncryptor class. This class provides you with a method that takes
+a plaintext password and returns an encrypted one. You need to create a bean
+of this class. What should be the scope of this bean? Choose the correct
+option from those given below.
+
+(Hint: PasswordEncryptor only contains methods and no fields to maintain state.
+ Hence, we need to create a stateless bean of PasswordEncryptor.)
+
+
+ Singleton
+
+
+Which of the following is a type of dependency injection supported
+by the Spring framework?
+
+Constructor injection
+Field injection
+
+
+Suppose you are working in a new company and are given a
+new mission-critical project. The deadlines for this new project are
+stricter than the normal projects that you handle.
+Your company and team use Java as a preferred language.
+You have to choose between Spring and Spring Boot for your new project.
+Which one would you go with?
+
+Spring Boot builds on top of Spring to provide additional benefits.
+So, you can choose Spring Boot.
+
+
+Suppose you are working on a project that uses Spring Boot.
+A new developer joins your team and says that he has worked
+previously with Spring but has not heard of Spring Boot.
+As you have knowledge about Spring Boot, he asks for your
+help to understand the benefits of Spring Boot over Spring.
+Which of the following statements can you use to state the benefits of
+Spring Boot to the developer?
+
+Spring Boot automatically adds commonly required dependencies for
+specific types of projects.
+
+Spring Boot lets you deploy your application easily with an embedded server.
+
+
+Which of the following statements about Spring Boot starters dependencies is
+not true?
+
+False
+
+Spring Boot starters mess up your pom.xml file and make the management extremely difficult.
+
+Spring Boot starters aggregate all the relevant dependencies of a project and
+allow you to only include a single dependency in the pom.xml file.
+This simplifies the mess and makes it easy to manage the required dependencies.
+Thus, this statement about Spring Boot starters is not true;
+hence, this option is correct.
+
+True
+
+Spring Boot starters bundle a set of dependencies required for an application,
+for example, web applications.
+
+Spring Boot starters add the relevant dependencies and ease your work.
+
+Spring Boot starters simplify dependency version management.
+
+
+Suppose you want your web application to run on port number 8081.
+Which of the following ways can you opt to do so?
+
+Make use of application.properties files in the resources folder
+Make use of command-line arguments while running the application
+Make use of the setProperty() method of the System class

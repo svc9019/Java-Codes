@@ -1,0 +1,87 @@
+MySql commands
+
+UPPER --> select upper('sudar')
+LOWER --> select lower('SUDAR')
+SUBSTRING --> select substring(text,start,end/length) ex.(sudarvendan,1,5)
+SUBSTRING_INDEX --> select substring_index('www.gmail.com','.',1/2/3) --> Occurrence
+1 -- www
+2 -- www.gmail
+LENGTH --> select length('SUDAR') --> gives the length
+REVERSE --> select reverse('SUDAR') --> reverse of the string
+
+select curtime() -- current time
+select month('') -- month
+select monthname('') -- monthname
+select year('') -- year
+select dayname('') -- day string
+select dayofmonth('') -- day numeric
+select str_to_date('string comma separated','format')
+
+select concat(name,"_",anothername)
+
+select count(*) from <tablename> where timestampdiff(year,dob,curdate())>=18;
+
+https://dev.mysql.com/doc/refman/8.0/en/string-functions.html
+https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_day
+
+select sum(mysum) from (select substring(address,1,4) mysum from employee) mysum;
+
+insert into quiz2 values('John','B','Smith',123456789,'1965-01-09','731 Fondren, Houston, TX','M',30000.00,333445555,5)
+
+
+Inner Join -- Intersection -- Common Between two
+Outer Join -- Complete
+Left Join -- Only 1st part with match of 2nd
+Right Join -- only 2nd with match of 1st
+
+https://dev.mysql.com/doc/refman/8.0/en/join.html
+
+https://www.javatpoint.com/mysql-left-join
+
+select student.student_name,salary.salary
+from student
+inner join salary
+on student.student_id = salary.student_id;
+
+select student.student_name, salary.salary, roommate.roommate_id
+from student
+inner join salary using(student_id)
+inner join roommate order by student_id;
+
+select student.student_name,salary.salary,roommate.roommate_id
+from student
+inner join roommate
+using(student_id)
+inner join salary
+using(student_id) order by student_id;
+
+select student.student_name,roommate.roommate_id,salary.salary
+from roommate
+inner join student
+using(student_id) inner join salary
+using(student_id) order by salary;
+
+select student.student_name,salary.salary,roommate.roommate_id
+from salary
+inner join student
+using(student_id)
+inner join roommate
+using(student_id) order by roommate_id;
+
+select s2.student_name,s1.salary,s3.roommate_id
+from salary s1
+join student s2 on s1.student_id = s2.student_id
+join roommate s3 on s1.student_id = s3.student_id
+where s1.salary = salary order by s3.student_id;
+
+select student_name,salary,roommate_id
+from student,salary,roommate
+where student.student_id = salary.student_id
+and student.student_id = roommate.student_id
+order by salary;
+
+select s1.student_name,s2.salary
+from student s1 join
+salary s2 on s1.student_id = s2.student_id
+where s2.salary = salary
+order by salary;

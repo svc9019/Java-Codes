@@ -1,0 +1,134 @@
+
+Intro to Spring Core and Spring Boot
+
+This is one of the most popular framework used for developing java
+
+Mainly Enterprise-Level Java Applications
+
+Coupling
+
+Loose Coupling
+
+Tight Coupling
+
+Version
+
+Maven Cycle
+
+First Session: Concept of Coupling, Why and how to create loosely coupled
+applications, Creating loosely coupled applications without framework can cause
+lot of boilerplates in the code.
+
+This is where spring make framework easier.
+
+Design Principle called Inversion of Control(IoC)
+
+Dependency Injection which this principle is implemented.
+
+Maven - how to create maven project
+      - Add Dependency
+      - bean creation and dependency injection in spring
+
+Spring Framework - Coupling Understand
+
+
+Coupling: Like Relationship
+
+Relationship between different classes
+
+Two Types - Loose Coupling
+            - Easy to debug / test
+            - Easy to replace
+          - Tight Coupling
+            - Difficult to debug / test
+            - Difficult to replace
+
+
+Tight Coupling
+
+Muliple Classes are highly dependant, This is called Tightly coupled
+
+For ex. An object of one class has to be an object of another class to function
+
+Referring another class directly inside dependant class
+
+Ex.
+
+Class Car { Engine engine}
+
+Class Engine{}
+
+
+dependant class
+
+public class MainApp() {
+
+  public static void main(String[] args){
+    GreetingService greetingservice = new GreetingService();
+    greetingservice.greet("Sudar");
+  }
+}
+
+dependency class
+
+public class GreetingService(){
+
+  public void greet(String name){
+    System.out.println("Hello "+name);
+  }
+
+}
+
+
+Loose Coupling
+
+1. Interfaces - Deal at Abstraction
+2. Factory Free Pattern
+
+Interface:
+
+Ex.
+
+public interace GreetingService() {
+  public void greet(String name);
+}
+
+public class EnglishService() implements GreetingService(){
+  public void greet(String name){
+    System.out.println("Hello "+name);
+  }
+}
+
+public class FrenchService() implements GreetingService(){
+  public void greet(String name){
+    System.out.println("Bonjour "+name);
+  }
+}
+
+
+Factory Pattern
+
+Ex.
+
+public class GreetingServiceFactory(){
+  public GreetingService getGreetingService(String Language){
+    if(language.equals("english")){
+      return new EnglishService();
+    } else if(language.equals("french")){
+      return new FrenchService();
+    } else {
+      throw new Runtime Exception("NO GREETING"+Language);
+    }
+  }
+}
+
+Concrete Coupling
+
+Factory Design Pattern
+
+1. MainApp
+2. Interface Class
+3. Supporting Class for Interface with returning the values
+4. Factory Class for defining the logics
+
+https://www.brainspire.com/blog/what-is-loose-coupling-why-does-it-matter-for-your-new-project

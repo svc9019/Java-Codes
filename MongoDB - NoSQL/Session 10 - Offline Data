@@ -1,0 +1,141 @@
+Session 10
+
+Data Modelling
+
+1. It is one of the crucial step to develop a robust database that can support
+the application for longer time
+
+2. Even-though NoSQL has dynamic Schema, It doesn't mean should not consider
+about Schema while developing database
+
+3. Main consideration should be while creating multiple relationships between
+documents whether need to have embedded document or references.
+
+Embedded Document - Documents inside another Document.
+
+Fox Ex.
+
+{
+ "_id": 210,
+ "Name": Sudar,
+ "Cust_Id": 2200,
+ "Orders":
+ {
+  "Order_id": 101,
+  "Prod_Name": "Plan",
+  "Sales": 2400
+ },
+ {
+ "Order_id": 102,
+ "Prod_Name": "Vlan",
+ "Sales":1400
+ }
+}
+
+References - instead of storing in single collection, one doc contains the
+reference from another(different) collection
+
+Works similar to relationships in RDBMS
+
+Ex.
+Customer collection
+
+{
+ "_id": 210,
+ "Name": Sudar,
+ "Cust_Id": 2200,
+ "Orders": [101,102....n]
+}
+
+Orders collection
+
+{
+ "Order_id": 101,
+ "Prod_Name": "Plan",
+ "Sales": 2400
+},
+{
+"Order_id": 102,
+"Prod_Name": "Vlan",
+"Sales":1400
+}
+
+
+Demo Session
+
+Example.
+
+1. db.createCollection('Customer');
+
+2. db.Customer.insert({"_ID":1101,"Name":"Sudar","Orders":[{"_id":101,"Prod_Name":"Plan",
+"Price": 1200},{"_id":102,"Prod_Name":"Vlan","Price": 1300}]})
+
+Additional Reading
+
+Since references can connect two collections,
+you must be wondering whether you can join two collections in MongoDB
+or not. This can be done using the $lookup aggregation operator.
+
+https://docs.mongodb.com/manual/reference/operator/aggregation/lookup/
+
+Modelling relationships
+
+One-to-One
+
+One-to-Many
+
+Many-to-Many
+
+Depending upon the data, this can be stored in denormalized / normalized
+
+Compass
+Charts
+BI Connector(Tableau, SQL Shell, Any ODBC Compatible Tool)
+
+Self-Managed, Atlas, Atlas Data Lake
+Work isolation and Data Stream
+Compass, Charts and BI Connector
+
+O-FISH - Officier Fish Information sharing hub
+
+
+Use indexes for read speeds
+4.2 introduced wild card indexes
+
+Indexes support the efficient execution of the query
+
+single compound
+wild card & multi Key
+geospatial
+text
+atlas search
+
+aggregation
+$match
+$project
+$lookup
+$group
+
+$match | $group | $sort
+
+
+Creating Models
+
+Ensure
+ - Good Performance
+ - Scalability despite constraints
+
+Hardware
+ - RAM faster than Disk
+ - Disk cheaper than RAM
+ - Network Latency
+ - Reduce costs
+
+DataBase Server
+ - Maximum size for a document
+
+Data Set
+ - Size of Data
+
+Learn  - https://youtu.be/ETawbylxygQ
+Codebase - https://wildaid.github.io

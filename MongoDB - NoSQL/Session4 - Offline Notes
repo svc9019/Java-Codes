@@ -1,0 +1,93 @@
+Session 4 - Indexing
+
+Performance Improvement
+
+Read and Writes
+
+How to do Indexing
+
+
+Indexing in MongoDB
+
+Piece of information with helps in efficient of queries
+
+find() - is inefficient way of querying
+
+with the help of index we can scan before to get the result
+
+in business requirement querying the same fields, Indexing is paramount
+importance to improve efficiency
+
+Special data structure used to store a small portion of collection dataset in
+a easy to traverse form.
+
+Stores a specific field to set of fields in a specific order
+
+Supports efficient equality matches and range-based queries
+
+Indexes defined at Collection Level and can be used in sorting the results
+
+
+Creating Indexes
+
+_id - prevent from duplicate index, by default this created.
+
+Creating index on any field
+
+Syntax
+db.collection.index({<field_name>:<order>})
+
+Ex. db.purchase.index({'Sales':1})
+
+index names are chosen based on field name and their direction using _ symbol
+
+index name Sales_1 - this will be created automatically by MongoDB
+
+Question 1
+
+ indexing in MongoDB.
+
+ Indexing reduces the number of documents to scan through by storing
+ the values in the specified fields in a specific order thereby
+ improving efficiency.
+
+ Indexing reduces the number of documents to scan through by storing the
+ values in the specified fields in a specific order thereby
+ improving efficiency.
+
+ indexes at the collection level and specify it for any number of
+ fields in that collection.
+
+ Refer - https://docs.mongodb.com/manual/indexes/
+
+ Without index, Whole Collection will be scanned.
+
+ Types of Indexes
+
+ Single Field Index - On Single field
+ Ex. db.purchase.createIndex({'Sales':1})
+
+ Complex Field Index - Multiple field
+ Ex. db.purchase.createIndex({'Sales':1},{'Profit':1})
+
+ Multi Key Index - Used to index content in arrays with separate index for each
+ element
+
+ Geospatial Index - Coordinate data using 2d indexes  - Plainer Geometery
+ 2d sphere - spherical Geometery
+
+ Text Index - Searching strings in a collection
+
+ Hashed Index - Mostly utilized for hashed-based sharding, support equality
+ matches only.
+
+
+
+ Index - Best Practices.
+
+Indexes works best with high read to write ratio
+
+Indexes should ideally fit inside RAM to get best processing speed.
+
+Fields that are to be indexed to chosen strategically based on how frequently 
+this is being queried.

@@ -1,0 +1,622 @@
+What does a POM file do?
+
+POM is an XML file and contains configuration details used by Maven to
+build the project.
+
+A POM file has all necessary information of a project. It also contains
+the configurations of plugins to be used during the build process.
+You can add dependencies in the POM file.
+
+POM stands for Project Object Model.
+
+Yes, POM is the acronym for Project Object Model.
+
+Install org.mongodb from maven project and add to existing Project
+
+Add Dependency in POM.xml file.
+
+Practical Session
+- Create Mongo Client
+- Create DataBase
+- Create Collection
+- Inserting Record
+
+Syntax Java File
+
+public class mongoApp{
+
+  public static void main(){
+
+  // Create Client
+  MongoClient mongoClient = MongoClient.create("mongo:<URL>");
+  // Print Client
+  System.out.println(mongoClient);
+  // Create Database
+  MongoDatabase db = mongoclient.getDatabase("upgrad_demo");
+  // Create Collection
+  MongoCollection<Document> studentCollection = db.getCollection("students");
+  // Print Collection
+  System.out.println("Collection "+studentCollection);
+
+  // Insert Student records
+  /*
+  Create Package Entities
+  Student class
+  */
+
+  }
+}
+
+
+package entities
+
+public class student {
+  private int id;
+  private String name;
+  private int courseId;
+  private int age;
+
+  // Create
+
+  /*
+  create constructor for variables
+  create getter and setter for variables
+  create to string variable
+
+  all above three using right click
+  */
+
+}
+
+
+mainApp
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import entities.Student;
+import org.bson.Document;
+
+public class MongoApp {
+
+    public static void main(String[] args) {
+        //Create Mongo Client
+        MongoClient mongoClient = MongoClients.create("mongodb://ec2-54-81-92-224.compute-1.amazonaws.com");
+        System.out.println(mongoClient);
+        //Create Database
+        MongoDatabase db = mongoClient.getDatabase("Upgrad_demo");
+        //Create Collection
+        MongoCollection<Document> studentCollection = db.getCollection("students");
+        System.out.println("Collection "+studentCollection);
+        // Insert One Record
+        Student student = new Student(1,"Arjuna",356,28);
+        System.out.println(studentCollection.insertOne(student.createDBObject()));
+    }
+}
+
+
+Entities
+
+package entities;
+
+import org.bson.Document;
+
+import javax.print.Doc;
+import java.util.Random;
+
+public class Student {
+
+    private int id;
+    private String name;
+    private int courseId;
+    private int age;
+
+    public Student(int id, String name, int courseId, int age) {
+        this.id = id;
+        this.name = name;
+        this.courseId = courseId;
+        this.age = age;
+    }
+
+    // Document -- import from org bson
+
+    public Document createDBObject(){
+        Random random = new Random();
+        Document student = new Document();
+        student.append("_id",random.nextDouble() * 100);
+        student.append("name",this.getName());
+        student.append("courseId",this.getCourseId());
+        student.append("age",this.getAge());
+
+        return student;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCourseId() {
+        return courseId;
+    }
+
+    public void setCourseId(int courseId) {
+        this.courseId = courseId;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", courseId=" + courseId +
+                ", age=" + age +
+                '}';
+    }
+}
+
+
+// BULK Insert
+
+Student student1 = new Student(1,"Cobra",356,28);
+Student student2 = new Student(2,"Vampire",356,32);
+Student student3 = new Student(3,"Dracula",359,28);
+Student student4 = new Student(4,"Trolls",359,32);
+Student student5 = new Student(5,"Vrolls",361,28);
+
+List<Document> studentList = new ArrayList<>();
+studentList.add(student1.createDBObject());
+studentList.add(student2.createDBObject());
+studentList.add(student3.createDBObject());
+studentList.add(student4.createDBObject());
+studentList.add(student5.createDBObject());
+
+System.out.println(studentCollection.insertMany(studentList));
+
+
+// Read all data
+
+for(Document document : studentCollection.find()){
+  System.out.println(docment.toJson);
+}
+
+
+// Read Specific data
+
+Bson filter = eq("name","Arjuna");
+System.out.println(studentCollection.find(filter).first().toJson());
+
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import entities.Student;
+import org.bson.Document;
+import org.bson.conversions.Bson;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.mongodb.client.model.Filters.eq;
+
+public class MongoApp {
+
+    public static void main(String[] args) {
+        //Create Mongo Client
+        MongoClient mongoClient = MongoClients.create("mongodb://ec2-3-84-230-198.compute-1.amazonaws.com");
+        System.out.println(mongoClient);
+        //Create Database
+        MongoDatabase db = mongoClient.getDatabase("Upgrad_demo");
+        //Create Collection
+        MongoCollection<Document> studentCollection = db.getCollection("students");
+        System.out.println("Collection " + studentCollection);
+//        // Insert Single Record
+//        Student student = new Student(1,"Arjuna",356,28);
+//        System.out.println(studentCollection.insertOne(student.createDBObject()));
+//        // Multiple Record
+//        Student student1 = new Student(1,"Cobra",356,28);
+//        Student student2 = new Student(2,"Vampire",356,32);
+//        Student student3 = new Student(3,"Dracula",359,28);
+//        Student student4 = new Student(4,"Trolls",359,32);
+//        Student student5 = new Student(5,"Vrolls",361,28);
+//
+//        // Add Students
+//        List<Document> studentList = new ArrayList<>();
+//        studentList.add(student1.createDBObject());
+//        studentList.add(student2.createDBObject());
+//        studentList.add(student3.createDBObject());
+//        studentList.add(student4.createDBObject());
+//        studentList.add(student5.createDBObject());
+//        // Print Output
+//        System.out.println(studentCollection.insertMany(studentList));
+
+//        for(Document document : studentCollection.find()){
+//            System.out.println(document.toJson());
+//           }
+        Bson filter = eq("name","Arjuna");
+        System.out.println(studentCollection.find(filter).first().toJson());
+    }
+}
+
+
+// Updating the Record
+
+Bson filter = eq("name","Arjuna");
+System.out.println(studentCollection.find(filter).first().toJson());
+
+Bson updateOperation = set("age",89);
+System.out.println(studentCollection.updateOne(filter,updateOperation));
+System.out.println(studentCollection.find(filter).first().toJson());
+
+Bson updateOperation = set("age":89); //set -- Import
+System.out.println(studentCollection.updateOne(filter, updateOperation()));
+System.out.println(studentCollection.find(filter).first().toJson()));
+
+// Deleting the Record
+
+System.out.println(studentCollection.deleteOne(eq("name","Arjuna")));
+
+// Dropping the Collection
+
+studentCollection.drop()
+
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import entities.Student;
+import org.bson.Document;
+import org.bson.conversions.Bson;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.mongodb.client.model.Filters.bitsAnySet;
+import static com.mongodb.client.model.Filters.eq;
+import static com.mongodb.client.model.Updates.set;
+
+public class MongoApp {
+
+    public static void main(String[] args) {
+        //Create Mongo Client
+        MongoClient mongoClient = MongoClients.create("mongodb://ec2-18-234-138-194.compute-1.amazonaws.com");
+        System.out.println(mongoClient);
+        //Create Database
+        MongoDatabase db = mongoClient.getDatabase("Upgrad_demo");
+        //Create Collection
+        MongoCollection<Document> studentCollection = db.getCollection("students");
+        System.out.println("Collection " + studentCollection);
+//        // Insert Single Record
+//        Student student = new Student(1,"Arjuna",356,28);
+//        System.out.println(studentCollection.insertOne(student.createDBObject()));
+//        // Multiple Record
+//        Student student1 = new Student(1,"Cobra",356,28);
+//        Student student2 = new Student(2,"Vampire",356,32);
+//        Student student3 = new Student(3,"Dracula",359,28);
+//        Student student4 = new Student(4,"Trolls",359,32);
+//        Student student5 = new Student(5,"Vrolls",361,28);
+//
+//        // Add Students
+//        List<Document> studentList = new ArrayList<>();
+//        studentList.add(student1.createDBObject());
+//        studentList.add(student2.createDBObject());
+//        studentList.add(student3.createDBObject());
+//        studentList.add(student4.createDBObject());
+//        studentList.add(student5.createDBObject());
+//        // Print Output
+//        System.out.println(studentCollection.insertMany(studentList));
+        // Finding the Record
+//        for(Document document : studentCollection.find()){
+//            System.out.println(document.toJson());
+//           }
+//        // Finding the One Record
+//        Bson filter = eq("name","Arjuna");
+//        System.out.println(studentCollection.find(filter).first().toJson());
+//        //Updating the Record
+//        Bson updateOperation = set("age",89);
+//        System.out.println(studentCollection.updateOne(filter,updateOperation));
+//        System.out.println(studentCollection.find(filter).first().toJson());
+        // Deleting One Record
+//        System.out.println(studentCollection.deleteOne(eq("name","Arjuna")));
+        // Dropping the Collection
+        studentCollection.drop();
+    }
+}
+
+
+Practical Session 2
+
+Create New Class for Document-Based.
+
+import com.mongodb.client.*;
+import com.mongodb.client.model.Accumulators;
+import com.mongodb.client.model.Aggregates;
+import org.bson.Document;
+
+import javax.print.Doc;
+import java.util.Arrays;
+
+public class DocumentDemo {
+    public static void main(String[] args) {
+        // Create Mongo Client
+        MongoClient mongoClient = MongoClients.create("mongodb://ec2-18-234-138-194.compute-1.amazonaws.com");
+        // DB and Collection
+        String dbName = "Upgrad_doc_demo";
+        String collectionName = "students";
+
+        MongoDatabase db = mongoClient.getDatabase(dbName);
+        MongoCollection<Document> collection = db.getCollection(collectionName);
+
+        // Inserting the Record
+
+//        Document doc = new Document("_id",123).append("name","Janaki")
+//                .append("courseId",312).append("age",38);
+//
+//        System.out.println(collection.insertOne(doc));
+
+        // Reading the Doc Back
+        MongoCursor<Document> cursor = collection.find().cursor();
+
+        while(cursor.hasNext()){
+            System.out.println(cursor.next());
+        }
+
+        // Fetching Average Age
+        cursor = collection.aggregate(
+                Arrays.asList(Aggregates.group("$courseId",
+                        Accumulators.avg("averageAge","$age")))).
+                cursor();
+        while(cursor.hasNext()){
+            System.out.println(cursor.next().toJson());
+        }
+    }
+}
+
+POJO stands for Plain Old Java Object.
+
+Yes, POJO stands for Plain Old Java Object. POJOs defines an entity.
+
+
+Java POJO needs to be converted to DBObject to be able to write
+to the Mongo database.
+
+For a Java code to go and write a given class in a MongoDB database,
+Java POJO needs to be converted to a DBObject which the MongoDB
+driver understands.
+
+https://www.journaldev.com/3963/mongodb-java-crud-example-tutorial
+https://developer.mongodb.com/quickstart/java-setup-crud-operations/
+https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i
+
+Practical Session 3
+
+Complex Queries
+
+Reading List of DB's
+
+mongoClient.listDatabases().forEach(db-> System.out.println(db.toJson()));
+
+eq - Client Filters
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+
+import javax.print.Doc;
+
+import static com.mongodb.client.model.Filters.eq;
+
+public class MongoClass {
+
+    public static void main(String[] args) {
+
+        MongoClient mongoClient = MongoClients.create("mongodb://ec2-18-234-138-194.compute-1.amazonaws.com");
+        System.out.println(mongoClient);
+        // Reading list of DB's
+//        mongoClient.listDatabases().forEach(db-> System.out.println(db.toJson()));
+        // Connecting to Database
+        MongoDatabase db = mongoClient.getDatabase("products");
+        // Connecting to Collection
+        MongoCollection<Document> purchaseCollection = db.getCollection("purchase");
+        // Printing Output
+        System.out.println(purchaseCollection);
+
+        // Reading all the Data
+//        for(Document document : purchaseCollection.find()){
+//            System.out.println(document.toJson());
+//        }
+        // Read only three Data
+//        for(Document document : purchaseCollection.find().limit(3)){
+//            System.out.println(document.toJson());
+//        }
+
+        // Read Particular Data
+        Document document = purchaseCollection.find(eq("Order ID","IN-2014-76016")).first();
+
+        System.out.println(document.toJson());
+    }
+}
+
+Session 2 - Complex queries
+
+// Sales value gt 3000.00
+
+for(Document document : purchaseCollection.find(gt("Sales",3000))){
+System.out.println(document);
+}
+Find Sales Value greater than 3000 and Profit Less than 2000
+
+for(Document document : purchaseCollection.find(and(gte("Sales",3000),lte("Profit",2000)))){
+System.out.println(document);
+}
+
+// Count Documents Profit Less than 200
+long document = purchaseCollection.countDocuments(lt("Profit",200));
+System.out.println(document);
+
+// Get all the Documents where segment is either consumer / corporate
+for(Document document : purchaseCollection.find(or(eq("Segment","Consumer"),eq("Segment","Corporate")))){
+System.out.println(document.toJson());
+}
+
+// Sorting or Elements -- ascending
+for(Document document : purchaseCollection.find(gte("Sales",2000)).sort(ascending("Sales"))){
+System.out.println(document.toJson());
+}
+
+// Sorting or Elements -- descending
+for(Document document : purchaseCollection.find(gte("Sales",2000)).sort(descending("Sales"))){
+System.out.println(document.toJson());
+}
+
+Session 4
+// Advanced queries
+
+// Aggregation queries Sales by segment
+
+for(Document document : purchaseCollection.aggregate(
+                Arrays.asList(Aggregates.group("$Segment",
+                        Accumulators.sum("Total Sales","$Sales"))))) {
+            System.out.println(document.toJson());
+        }
+
+
+// Total Sales across all the Orders
+        for(Document document : purchaseCollection.aggregate(Arrays.asList(
+                Aggregates.group("null",Accumulators.sum("Total Sales","$Sales"))))){
+            System.out.println(document.toJson());
+        }
+
+// Average Sales Across all the Orders
+
+for(Document document : purchaseCollection.aggregate(Arrays.asList
+          (Aggregates.group(null,Accumulators.avg("Average Sales","$Sales"))))){
+      System.out.println(document.toJson());
+}
+
+
+Complete setup
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.Accumulators;
+import com.mongodb.client.model.Aggregates;
+import org.bson.Document;
+
+import javax.print.Doc;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import static com.mongodb.client.model.Filters.*;
+import static com.mongodb.client.model.Sorts.ascending;
+import static com.mongodb.client.model.Sorts.descending;
+
+public class MongoClass {
+
+    public static void main(String[] args) {
+
+        MongoClient mongoClient = MongoClients.create("mongodb://ec2-3-87-19-128.compute-1.amazonaws.com");
+        System.out.println(mongoClient);
+        // Reading list of DB's
+//        mongoClient.listDatabases().forEach(db-> System.out.println(db.toJson()));
+        // Connecting to Database
+        MongoDatabase db = mongoClient.getDatabase("products");
+        // Connecting to Collection
+        MongoCollection<Document> purchaseCollection = db.getCollection("purchase");
+        // Printing Output
+//        System.out.println(purchaseCollection);
+
+        // Reading all the Data
+//        for(Document document : purchaseCollection.find()){
+//            System.out.println(document.toJson());
+//        }
+        // Read only three Data
+//        for(Document document : purchaseCollection.find().limit(3)){
+//            System.out.println(document.toJson());
+//        }
+
+        // Read Particular Data
+//        Document document = purchaseCollection.find(eq("Order ID","IN-2014-76016")).first();
+//        System.out.println(document.toJson());
+
+        // Find Sales Value greater than 3000 and Profit Less than 2000
+//        for(Document document : purchaseCollection.find(and(gte("Sales",3000),lte("Profit",2000)))){
+//            System.out.println(document);
+//        }
+
+//        // Count Documents Profit Less than 200
+//        long document = purchaseCollection.countDocuments(lt("Profit",200));
+//        System.out.println(document);
+
+//        // Get all the Documents where segment is either consumer / corporate
+//        for(Document document : purchaseCollection.find(or(eq("Segment","Consumer"),eq("Segment","Corporate")))){
+//            System.out.println(document.toJson());
+//        }
+
+//        // Sorting or Elements
+//        for(Document document : purchaseCollection.find(gte("Sales",2000)).sort(ascending("Sales"))){
+//            System.out.println(document.toJson());
+//        }
+//        // Sorting or Elements -- descending
+//        for(Document document : purchaseCollection.find(gte("Sales",2000)).sort(descending("Sales"))){
+//            System.out.println(document.toJson());
+//        }
+        //Aggregation Queries
+        // Total Sales Based on Segments
+//        for(Document document : purchaseCollection.aggregate(
+//                Arrays.asList(Aggregates.group("$Segment",
+//                        Accumulators.sum("Total Sales","$Sales"))))) {
+//            System.out.println(document.toJson());
+//        }
+//        // Total Sales across all the Orders
+//        for(Document document : purchaseCollection.aggregate(Arrays.asList(
+//                Aggregates.group("null",Accumulators.sum("Total Sales","$Sales"))))){
+//            System.out.println(document.toJson());
+//        }
+//        // Average Sales Across all the Orders
+//        for(Document document : purchaseCollection.aggregate(Arrays.asList
+//                (Aggregates.group(null,
+//                        Accumulators.avg("Average Sales","$Sales"))))){
+//            System.out.println(document.toJson());
+//        }
+    }
+}
+
+Quiz
+
+Which of the following is true for the following code?
+
+Document doc = purchaseCollection.find(eq("Order ID", "IN-2014-76016")).first();
+
+Yes, it will get the document of a particular id. For example-
+
+Document doc = purchaseCollection.find(eq("Order ID", "IN-2014-76016")).first();
+The above piece of code will return a document from the collection
+whose Order Id is IN-2014-76016.

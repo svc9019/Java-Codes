@@ -1,0 +1,291 @@
+
+Intro to Spring Core and Spring Boot
+
+This is one of the most popular framework used for developing java
+
+Mainly Enterprise-Level Java Applications
+
+Coupling
+
+Loose Coupling
+
+Tight Coupling
+
+Version
+
+Maven Cycle
+
+First Session: Concept of Coupling, Why and how to create loosely coupled
+applications, Creating loosely coupled applications without framework can cause
+lot of boilerplates in the code.
+
+This is where spring make framework easier.
+
+Design Principle called Inversion of Control(IoC)
+
+Dependency Injection which this principle is implemented.
+
+Maven - how to create maven project
+      - Add Dependency
+      - bean creation and dependency injection in spring
+
+Spring Framework - Coupling Understand
+
+
+Coupling: Like Relationship
+
+Relationship between different classes
+
+Two Types - Loose Coupling
+            - Easy to debug / test
+            - Easy to replace
+          - Tight Coupling
+            - Difficult to debug / test
+            - Difficult to replace
+
+
+Tight Coupling
+
+Muliple Classes are highly dependant, This is called Tightly coupled
+
+For ex. An object of one class has to be an object of another class to function
+
+Referring another class directly inside dependant class
+
+Ex.
+
+Class Car { Engine engine}
+
+Class Engine{}
+
+
+dependant class
+
+public class MainApp() {
+
+  public static void main(String[] args){
+    GreetingService greetingservice = new GreetingService();
+    greetingservice.greet("Sudar");
+  }
+}
+
+dependency class
+
+public class GreetingService(){
+
+  public void greet(String name){
+    System.out.println("Hello "+name);
+  }
+
+}
+
+
+Loose Coupling
+
+1. Interfaces - Deal at Abstraction
+2. Factory Free Pattern
+
+Interface:
+
+Ex.
+
+public interace GreetingService() {
+  public void greet(String name);
+}
+
+public class EnglishService() implements GreetingService(){
+  public void greet(String name){
+    System.out.println("Hello "+name);
+  }
+}
+
+public class FrenchService() implements GreetingService(){
+  public void greet(String name){
+    System.out.println("Bonjour "+name);
+  }
+}
+
+
+Factory Pattern
+
+Ex.
+
+public class GreetingServiceFactory(){
+  public GreetingService getGreetingService(String Language){
+    if(language.equals("english")){
+      return new EnglishService();
+    } else if(language.equals("french")){
+      return new FrenchService();
+    } else {
+      throw new Runtime Exception("NO GREETING"+Language);
+    }
+  }
+}
+
+Concrete Coupling
+
+Factory Design Pattern
+
+1. MainApp
+2. Interface Class
+3. Supporting Class for Interface with returning the values
+4. Factory Class for defining the logics
+
+https://www.brainspire.com/blog/what-is-loose-coupling-why-does-it-matter-for-your-new-project
+
+
+Inversion of Control
+
+Famous / Core Framework
+
+Normal Flow: The Coder is in control to execute and provide the final outcome
+
+Inverted Flow: The Coder fills in the Template using Framework on what should be
+the final product, Here the Framework is in Control
+
+Flow execution using IoC
+
+Developer creates Service
+IoC Framework creates the instance of service in main class
+Where then Developer invokes the respective service
+
+IoC frameworks are based on the principles of inversion of control.
+So, when using a framework, the framework will take care of object creation.
+You would only need to provide a hint to the framework that a particular class’s
+ object needs to be created, and the framework will take care of the rest.
+
+IoC is a principle, which states that the dependent classes should not create
+objects of the dependency classes. Dependency objects would be created by
+either the IoC container or the framework and be provided to the dependent object.
+
+
+Dependency Injection
+
+It is Desgin Pattern using Spring
+
+Manages objects Life Cycle maintains
+
+DI helps to inject dependencies into an object
+IoC is a generic programming principle, DI is an implementation of IoC
+IoC States the dependant classes shouldn't create objects, whereas IoC container
+or Framework should provide the objects
+
+DI is one of the implementation or subtype of IoC and instructs how to provide
+dependency objects to dependent objects
+DI states the dependencies would be injected via either getter or setter or
+constructor
+
+https://medium.com/@amitkma/understanding-inversion-of-control-ioc-principle-163b1dc97454
+
+https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/
+
+Dependency injection is a design pattern, whereas Inversion of Control is a design principle.
+Dependency injection ensures that all the required dependencies of a dependent class are met.
+Dependency injection is the implementation of the IoC.
+
+
+Intro to Spring: Spring Framework and How it can simplify the code
+
+Spring Beans and Spring Containers
+
+BOILERPLATE CODES
+
+Spring framework helps providing this boilerplate
+
+Set of rules, Set of users follow the same
+
+Framework or Software Framework Provides you well tested generic boilerplate codes
+by following the principle and best practices
+
+Save time and insert correct components, Fast and Easy Approach
+
+All Framework, Including Spring, Rely on the Concept of IoC
+
+Spring Container:
+1. IoC instantiates the object of dependancy classes used by dependant classes
+2. IoC framework behaves like containers for objects, So IoC Framework is also
+called as IoC Containers
+3. IoC Container of Spring Framework, is also called as Spring Containers
+4. The Objects inside Spring Containers also called as Spring Beans or Beans
+
+
+Spring Container is a Collection of Objects which is called Beans
+
+Spring provides two types of Containers
+1. Spring BeanFactory Container - Lazy initialization need not to be loaded beginning
+Ex. Mobile apps
+2. Spring ApplicationContext Container - Full Pledged Create objects in the beginning
+and kept ready, Ex. High Performance Servers
+
+
+
+Bean Factory
+
+It is similar to factory class and collection of methods to get beans from Spring
+container
+It is lightweight, when required this will get instantiates the beans instead at
+the beginning
+
+ApplicationContext
+
+Interface extends BeanFactory
+heavyweight as it loads all the beans at the startup of the applications
+provides extra enterprise specific functionality on top of the bean factory
+container
+as it contain all the functionality of BeanFactory and has additional
+functionality, this is recommended over BeanFactory
+
+
+Features of Spring Framework
+
+1. it is opensource
+2. lightweight
+3. modular - loose coupling
+4. integration with other framework
+5. Aspect-Oriented Programming (AOP): separate cross cutting concerns(logging,
+security, exception handling, etc) from business logic
+6. Dependency Injection: helps developing Loosely coupled applications and in turn
+facilitates easier unit testing
+7. IoC Containers: Creates and Manages the life Cycle of the Spring Beans
+8. Transaction Management: Used to maintain transaction and is mostly used to
+maintain database transactions
+
+Aspect-oriented programming (AOP) is an approach to programming that
+allows global properties of a program to determine how it is compiled
+into an executable program.
+
+Spring Architecture
+
+
+Data Access / Integration       Web - Websocket, Servelet,Web, Portlet
+JDBC,ORM
+OXM,JMS
+Transaction
+AOP, Aspects, Instrumentation, Messaging
+Core Containers: Contains Beans, Core, Context, SpEL
+Test
+
+Addl.Reading - https://spring.io/why-spring
+
+Statement: In Spring-based applications, objects that are created and
+managed by Spring are present in a Spring Container.
+
+Which of the following is a feature of the Spring Framework?
+Note: More than one option may be correct.
+
+IoC Container
+Dependency injection
+lightweight
+
+Which of the following options is correct?
+
+Note: More than one option may be correct.
+
+
+When using ApplicationContext containers,
+objects are created at the start of the application.
+Spring provides both ApplicationContext and BeanFactory containers
+BeanFactory containers are used for lightweight servers
+
+
+The Spring Framework follows the Inversion of Control design principle. True

@@ -1,0 +1,146 @@
+Graded Questions
+
+What is the total count of orders present in purchases
+collection where profit >= 200 and profit <= 3000?
+
+db.purchase.find({$and:[{'Profit':{$gte:200}},{'Profit':{$lte:3000}}]}).count()
+
+What is the maximum value of sales across all the orders?
+
+db.purchase.aggregate([{$group:{_id:null,MaxSales:{$max:'$Sales'}}}])
+
+
+What is the total number of orders in the purchases collection
+whose ‘Segment’ is ‘Home Office’?
+
+db.purchases.find({'Segment':{$in:['Home Office']}}).count()
+
+db.purchase.find({$and:[{'Segment':'Home Office'}]}).count()
+
+
+What does the following piece of code do? - Wrong.
+
+ Student student = new Student(123, "Abhinav", 356, 28);
+
+ Actual Answer - Yes, it will create a student instance of the
+ Student class which will have specifications as student
+ name ‘Abhinav’, student ID ‘123’, age ‘28’.
+
+ The code will only create a student instance.
+ It will not store it in any Mongo database.
+
+
+
+ What will the following Java code do?
+
+String dBName = "upgrad";
+String collectionName = "students";
+ MongoClient mongoClient = null;
+ String connectionString = "mongodb://ec2-3-94-86-35.compute-1.amazonaws.com:27017";
+
+
+      mongoClient = MongoClients.create(connectionString);
+      MongoDatabase db = mongoClient.getDatabase(dBName);
+      MongoCollection<Document> collection = db.getCollection(collectionName);
+
+      Document doc = new Document("_id", 141)
+          .append("name", "Rahul")
+          .append("courseId", 114)
+          .append("age", 28);
+      collection.insertOne(doc);
+
+
+The given code will store the details of the student named Rahul
+in the students collection in the upgrad database.
+
+
+When you want to create an index for a collection named
+Products using the field Cost in the descending order,
+the syntax would be
+
+db.Products.createIndex({Cost:-1})
+where -1 indicates that the index would be in descending order.
+
+
+Match the following actions with their appropriate functions used
+in JAVA programming.
+
+a  Finding all the orders from the purchases collection	I deleteOne
+b	Adding information about a new order	II	updateOne
+c	Removing a document with the order id ‘TEC-17’	III	find
+d	Changing the profit value of order ids from 400 to 800 IV	insertOne
+
+a-III, b- IV, c-I, d-II
+
+
+‘insertOne’ - Used to add a new document in the given collection
+
+‘find’ - Used to find all the documents present in the given collection
+
+‘updateOne’ - Used to update any particular document in the given collection
+
+‘deleteOne’ - Used to delete a document from the given collection
+
+Which of the following syntaxes is used to count the total
+number of documents for which profit is less than equal
+to 300 in a given collection in a JAVA program?
+
+Note: You can assume that the collection name is purchasesCollection.
+
+MongoDatabase mongoDatabase = mongoClient.getDatabase("products");
+MongoCollection<Document> purchaseCollection = mongoDatabase.getCollection("purchases");
+
+purchaseCollection.countDocuments(lte("Profit", 300))
+
+
+
+JAVA code for sorting documents
+Suppose you want to find all the orders that have a sales
+value greater than 500. Then, you want to sort the documents
+received in descending order and print them.
+
+List the keywords given below in the order of their occurrence
+in a single query.
+
+
+Collection name
+
+gt
+
+sort
+
+find
+
+descending
+
+Note: You can assume that the database and collection are given as-
+
+MongoDatabase mongoDatabase = mongoClient.getDatabase("products");
+MongoCollection<Document> purchaseCollection = mongoDatabase
+.getCollection("purchases");
+
+
+1,4,2,3,5
+
+The query would be as follows:
+
+for (Document document : purchaseCollection.find(gt("Sales", 500))
+.sort(descending("Sales"))) {
+      System.out.println(document.toJson());
+    }
+
+MongoDB
+Choose the incorrect option from the options given below.
+
+MongoDB is a document database, where different documents are stored in one collection.
+
+
+Object data type is used for embedded documents in MongoDB.
+
+
+There is no ‘Null’ data type in MongoDB.
+Feedback:
+There is a ‘Null’ data type in MongoDB. This type is used to store a null value.
+
+
+Object ID data type in MongoDB is used to store the document’s ID.

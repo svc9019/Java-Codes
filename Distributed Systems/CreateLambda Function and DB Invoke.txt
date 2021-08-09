@@ -1,0 +1,23 @@
+const AWS = require('aws-sdk');
+const dynamoDb = new AWS.DynamoDB.DocumentClient();
+
+exports.handler = async (event) => {
+    // TODO implement
+    const name = event['name'];
+    const timestamp = new Date().getTime();
+    const registration = {
+      TableName: 'upgrad-registration',
+      Item: {
+          'name': name,
+          'timestamp': timestamp
+      }
+    };
+    
+    await dynamoDb.put(registration).promise();
+    
+    const response = {
+        statusCode: 200,
+        body: JSON.stringify('Registration Complete for '+ name),
+    };
+    return response;
+};

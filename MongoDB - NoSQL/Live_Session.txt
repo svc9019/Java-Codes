@@ -1,0 +1,63 @@
+Live Session.
+
+mongodb+srv://admin:admin@cluster0.yjdma.mongodb.net/
+myFirstDatabase?authSource=admin&replicaSet=atlas-a0er6z-shard-0&w=
+majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true
+
+mongodb-win32-x86_64-windows-4.4.5
+
+polygot persistence
+
+volt db
+
+db.collection.stats() -- to check the size of the collection
+
+db.collection.find({'':''}).explain("executionStats")
+
+Stage: COLLSCAN
+
+execution time
+total doc examined
+
+Winning Plan
+
+show dbs - shows all databases
+use db-name - connect to db
+db.collection-name.stats() - to see the details of collection
+db.grades.find({"student_id":0}).explain("executionStats")
+
+db.collection.getIndexes() -- get indexes.
+
+
+db.collection.createIndex({'field_name':1},{name:'field_name_index'})
+
+
+dependancy - org.mongodb:mongodb-driver:3.12.8
+
+Key Promoter X
+
+import org.bson.Document;
+
+import static com.mongodb.client.model.Filters.eq;
+
+https://www.educative.io/courses/grokking-the-coding-interview
+
+cracking the code interview
+
+https://hazelcast.com/glossary/time-series-database/
+
+https://github.com/ajinkya-xyz/share/upload
+
+
+Polygot persitence
+New SQL - Volt Db
+
+mongodb+srv://admin:admin@cluster0.yjdma.
+mongodb.net/myFirstDatabase?authSource=admin&replicaSet=
+atlas-a0er6z-shard-0&w=majority&readPreference=primary&appname=
+MongoDB%20Compass&retryWrites=true&ssl=true
+
+show dbs - shows all databases
+use db-name - connect to db
+db.collection-name.stats() - to see the details of collection
+db.grades.find({"student_id":0}).explain("executionStats")

@@ -1,0 +1,2312 @@
+[
+ {
+   "Order ID": "IN-2014-76016",
+   "Segment": "Corporate",
+   "Product ID": "FUR-BO-10004852",
+   "Sales": 5667.87,
+   "Profit": 2097.03
+ },
+ {
+   "Order ID": "IN-2012-48240",
+   "Segment": "Corporate",
+   "Product ID": "FUR-TA-10000226",
+   "Sales": 1745.34,
+   "Profit": 226.86
+ },
+ {
+   "Order ID": "IN-2012-48240",
+   "Segment": "Corporate",
+   "Product ID": "TEC-PH-10004664",
+   "Sales": 1916.73,
+   "Profit": 498.33
+ },
+ {
+   "Order ID": "IN-2014-68463",
+   "Segment": "Corporate",
+   "Product ID": "OFF-ST-10004060",
+   "Sales": 1865.97,
+   "Profit": 802.17
+ },
+ {
+   "Order ID": "IN-2012-79439",
+   "Segment": "Corporate",
+   "Product ID": "FUR-BO-10001372",
+   "Sales": 3076.5,
+   "Profit": 215.25
+ },
+ {
+   "Order ID": "IN-2014-32084",
+   "Segment": "Consumer",
+   "Product ID": "TEC-PH-10001457",
+   "Sales": 2550,
+   "Profit": 280.44
+ },
+ {
+   "Order ID": "IN-2014-16887",
+   "Segment": "Consumer",
+   "Product ID": "TEC-CO-10002040",
+   "Sales": 1272.72,
+   "Profit": 534.48
+ },
+ {
+   "Order ID": "IN-2012-44278",
+   "Segment": "Home Office",
+   "Product ID": "TEC-CO-10003102",
+   "Sales": 2372.22,
+   "Profit": 0
+ },
+ {
+   "Order ID": "IN-2011-51740",
+   "Segment": "Corporate",
+   "Product ID": "TEC-PH-10000720",
+   "Sales": 840.6,
+   "Profit": 319.35
+ },
+ {
+   "Order ID": "IN-2014-25847",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AP-10003275",
+   "Sales": 2488.56,
+   "Profit": 348.24
+ },
+ {
+   "Order ID": "IN-2012-53420",
+   "Segment": "Corporate",
+   "Product ID": "TEC-CO-10004961",
+   "Sales": 723.3,
+   "Profit": 332.7
+ },
+ {
+   "Order ID": "IN-2011-17594",
+   "Segment": "Consumer",
+   "Product ID": "TEC-PH-10001751",
+   "Sales": 1917,
+   "Profit": 690.12
+ },
+ {
+   "Order ID": "IN-2013-60700",
+   "Segment": "Consumer",
+   "Product ID": "FUR-TA-10001889",
+   "Sales": 1850.46,
+   "Profit": 259.02
+ },
+ {
+   "Order ID": "IN-2014-47806",
+   "Segment": "Consumer",
+   "Product ID": "FUR-TA-10001360",
+   "Sales": 3094.56,
+   "Profit": 1423.44
+ },
+ {
+   "Order ID": "IN-2014-76016",
+   "Segment": "Corporate",
+   "Product ID": "FUR-BO-10004043",
+   "Sales": 2871.54,
+   "Profit": 57.33
+ },
+ {
+   "Order ID": "IN-2014-52636",
+   "Segment": "Corporate",
+   "Product ID": "TEC-CO-10004404",
+   "Sales": 2098.32,
+   "Profit": 860.16
+ },
+ {
+   "Order ID": "IN-2013-78809",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10002247",
+   "Sales": 1838.52,
+   "Profit": 349.2
+ },
+ {
+   "Order ID": "IN-2014-65194",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10003950",
+   "Sales": 2289.75,
+   "Profit": 68.55
+ },
+ {
+   "Order ID": "IN-2013-34968",
+   "Segment": "Home Office",
+   "Product ID": "FUR-BO-10004679",
+   "Sales": 1564.56,
+   "Profit": 172.08
+ },
+ {
+   "Order ID": "IN-2011-45993",
+   "Segment": "Corporate",
+   "Product ID": "TEC-MA-10002468",
+   "Sales": 2173.5,
+   "Profit": 260.82
+ },
+ {
+   "Order ID": "IN-2014-51719",
+   "Segment": "Corporate",
+   "Product ID": "OFF-ST-10003837",
+   "Sales": 1429.26,
+   "Profit": 199.92
+ },
+ {
+   "Order ID": "IN-2014-10657",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10001415",
+   "Sales": 1409.04,
+   "Profit": 436.77
+ },
+ {
+   "Order ID": "IN-2014-47806",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AP-10001931",
+   "Sales": 2153.16,
+   "Profit": 861.24
+ },
+ {
+   "Order ID": "ID-2013-48485",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10000025",
+   "Sales": 429.48,
+   "Profit": -257.76
+ },
+ {
+   "Order ID": "IN-2014-75267",
+   "Segment": "Home Office",
+   "Product ID": "TEC-AC-10002172",
+   "Sales": 655.56,
+   "Profit": 91.53
+ },
+ {
+   "Order ID": "IN-2014-44012",
+   "Segment": "Home Office",
+   "Product ID": "OFF-ST-10000103",
+   "Sales": 596.7,
+   "Profit": 83.52
+ },
+ {
+   "Order ID": "IN-2013-26743",
+   "Segment": "Corporate",
+   "Product ID": "TEC-AC-10000866",
+   "Sales": 1282.8,
+   "Profit": 217.95
+ },
+ {
+   "Order ID": "IN-2013-30775",
+   "Segment": "Corporate",
+   "Product ID": "OFF-ST-10004837",
+   "Sales": 767.52,
+   "Profit": 45.9
+ },
+ {
+   "Order ID": "IN-2012-40211",
+   "Segment": "Consumer",
+   "Product ID": "TEC-CO-10004897",
+   "Sales": 1469.25,
+   "Profit": 616.95
+ },
+ {
+   "Order ID": "IN-2012-35143",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AP-10002312",
+   "Sales": 2636.85,
+   "Profit": 580.05
+ },
+ {
+   "Order ID": "IN-2013-72901",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10002060",
+   "Sales": 961.8,
+   "Profit": 163.38
+ },
+ {
+   "Order ID": "IN-2012-11476",
+   "Segment": "Corporate",
+   "Product ID": "TEC-AC-10002533",
+   "Sales": 802.2,
+   "Profit": 128.31
+ },
+ {
+   "Order ID": "IN-2013-41569",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10003953",
+   "Sales": 1027.2,
+   "Profit": 287.52
+ },
+ {
+   "Order ID": "IN-2014-62156",
+   "Segment": "Home Office",
+   "Product ID": "FUR-BO-10001598",
+   "Sales": 877.38,
+   "Profit": 394.8
+ },
+ {
+   "Order ID": "IN-2014-41485",
+   "Segment": "Consumer",
+   "Product ID": "TEC-CO-10000953",
+   "Sales": 720.42,
+   "Profit": 201.66
+ },
+ {
+   "Order ID": "IN-2011-46728",
+   "Segment": "Corporate",
+   "Product ID": "TEC-CO-10003777",
+   "Sales": 785.61,
+   "Profit": 157.05
+ },
+ {
+   "Order ID": "IN-2012-48548",
+   "Segment": "Consumer",
+   "Product ID": "TEC-CO-10000269",
+   "Sales": 900.9,
+   "Profit": 63
+ },
+ {
+   "Order ID": "IN-2014-70724",
+   "Segment": "Consumer",
+   "Product ID": "TEC-CO-10000791",
+   "Sales": 1320,
+   "Profit": 488.4
+ },
+ {
+   "Order ID": "IN-2012-40638",
+   "Segment": "Corporate",
+   "Product ID": "OFF-ST-10003203",
+   "Sales": 984.9,
+   "Profit": 423.45
+ },
+ {
+   "Order ID": "IN-2013-53819",
+   "Segment": "Consumer",
+   "Product ID": "TEC-PH-10003488",
+   "Sales": 682.95,
+   "Profit": 116.1
+ },
+ {
+   "Order ID": "IN-2013-61841",
+   "Segment": "Consumer",
+   "Product ID": "TEC-CO-10004998",
+   "Sales": 697.32,
+   "Profit": 292.8
+ },
+ {
+   "Order ID": "IN-2014-15809",
+   "Segment": "Consumer",
+   "Product ID": "TEC-CO-10000865",
+   "Sales": 633.48,
+   "Profit": 69.66
+ },
+ {
+   "Order ID": "IN-2013-74350",
+   "Segment": "Corporate",
+   "Product ID": "TEC-CO-10001472",
+   "Sales": 1195.2,
+   "Profit": 585.6
+ },
+ {
+   "Order ID": "IN-2014-32651",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10001500",
+   "Sales": 607.14,
+   "Profit": 36.36
+ },
+ {
+   "Order ID": "IN-2013-20933",
+   "Segment": "Home Office",
+   "Product ID": "TEC-PH-10002683",
+   "Sales": 636.3,
+   "Profit": 235.41
+ },
+ {
+   "Order ID": "IN-2013-17482",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10004009",
+   "Sales": 685.8,
+   "Profit": 157.65
+ },
+ {
+   "Order ID": "IN-2011-17594",
+   "Segment": "Consumer",
+   "Product ID": "FUR-BO-10004537",
+   "Sales": 687.48,
+   "Profit": 254.28
+ },
+ {
+   "Order ID": "IN-2013-78809",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10000622",
+   "Sales": 568.32,
+   "Profit": 45.36
+ },
+ {
+   "Order ID": "IN-2012-53042",
+   "Segment": "Home Office",
+   "Product ID": "FUR-BO-10003549",
+   "Sales": 970.2,
+   "Profit": 145.5
+ },
+ {
+   "Order ID": "IN-2012-35143",
+   "Segment": "Consumer",
+   "Product ID": "TEC-MA-10000555",
+   "Sales": 683.88,
+   "Profit": 0
+ },
+ {
+   "Order ID": "IN-2014-53707",
+   "Segment": "Consumer",
+   "Product ID": "TEC-PH-10001321",
+   "Sales": 838.62,
+   "Profit": 176.04
+ },
+ {
+   "Order ID": "IN-2014-45258",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10004694",
+   "Sales": 553.92,
+   "Profit": 199.32
+ },
+ {
+   "Order ID": "IN-2012-65915",
+   "Segment": "Consumer",
+   "Product ID": "FUR-BO-10000087",
+   "Sales": 826.56,
+   "Profit": 41.28
+ },
+ {
+   "Order ID": "IN-2014-34576",
+   "Segment": "Home Office",
+   "Product ID": "TEC-PH-10003927",
+   "Sales": 833.7,
+   "Profit": 316.8
+ },
+ {
+   "Order ID": "IN-2011-27408",
+   "Segment": "Corporate",
+   "Product ID": "TEC-AC-10002533",
+   "Sales": 916.8,
+   "Profit": 146.64
+ },
+ {
+   "Order ID": "IN-2012-74854",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10002240",
+   "Sales": 231.36,
+   "Profit": 64.68
+ },
+ {
+   "Order ID": "IN-2013-12757",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AP-10002186",
+   "Sales": 426.6,
+   "Profit": 34.05
+ },
+ {
+   "Order ID": "IN-2011-19421",
+   "Segment": "Consumer",
+   "Product ID": "TEC-PH-10000840",
+   "Sales": 728.64,
+   "Profit": 225.84
+ },
+ {
+   "Order ID": "IN-2014-74644",
+   "Segment": "Home Office",
+   "Product ID": "TEC-PH-10003823",
+   "Sales": 298.2,
+   "Profit": 116.28
+ },
+ {
+   "Order ID": "IN-2014-68463",
+   "Segment": "Corporate",
+   "Product ID": "OFF-BI-10003098",
+   "Sales": 205.68,
+   "Profit": 80.16
+ },
+ {
+   "Order ID": "IN-2012-46903",
+   "Segment": "Corporate",
+   "Product ID": "TEC-PH-10002104",
+   "Sales": 565.32,
+   "Profit": 163.92
+ },
+ {
+   "Order ID": "IN-2013-22438",
+   "Segment": "Home Office",
+   "Product ID": "TEC-PH-10003784",
+   "Sales": 286.26,
+   "Profit": 19.98
+ },
+ {
+   "Order ID": "IN-2013-61841",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10001357",
+   "Sales": 395.88,
+   "Profit": 71.22
+ },
+ {
+   "Order ID": "IN-2014-11427",
+   "Segment": "Home Office",
+   "Product ID": "TEC-PH-10001619",
+   "Sales": 1071.84,
+   "Profit": 107.1
+ },
+ {
+   "Order ID": "IN-2014-57984",
+   "Segment": "Consumer",
+   "Product ID": "TEC-CO-10001204",
+   "Sales": 963.36,
+   "Profit": 154.08
+ },
+ {
+   "Order ID": "IN-2014-65243",
+   "Segment": "Home Office",
+   "Product ID": "FUR-CH-10002224",
+   "Sales": 398.61,
+   "Profit": 15.93
+ },
+ {
+   "Order ID": "IN-2013-26743",
+   "Segment": "Corporate",
+   "Product ID": "TEC-AC-10002884",
+   "Sales": 504.54,
+   "Profit": 186.66
+ },
+ {
+   "Order ID": "IN-2014-10083",
+   "Segment": "Home Office",
+   "Product ID": "FUR-FU-10004811",
+   "Sales": 439.02,
+   "Profit": 105.3
+ },
+ {
+   "Order ID": "IN-2014-42276",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10004065",
+   "Sales": 415.44,
+   "Profit": 66.24
+ },
+ {
+   "Order ID": "IN-2014-48982",
+   "Segment": "Home Office",
+   "Product ID": "TEC-AC-10000596",
+   "Sales": 448.8,
+   "Profit": 188.4
+ },
+ {
+   "Order ID": "IN-2012-46903",
+   "Segment": "Corporate",
+   "Product ID": "FUR-CH-10003009",
+   "Sales": 500.85,
+   "Profit": 125.19
+ },
+ {
+   "Order ID": "IN-2013-73342",
+   "Segment": "Home Office",
+   "Product ID": "FUR-TA-10000403",
+   "Sales": 477.84,
+   "Profit": 14.31
+ },
+ {
+   "Order ID": "IN-2014-75267",
+   "Segment": "Home Office",
+   "Product ID": "FUR-CH-10001797",
+   "Sales": 448.77,
+   "Profit": 170.52
+ },
+ {
+   "Order ID": "IN-2013-49857",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10000258",
+   "Sales": 366.84,
+   "Profit": 21.96
+ },
+ {
+   "Order ID": "IN-2012-48548",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10003861",
+   "Sales": 401.04,
+   "Profit": 176.4
+ },
+ {
+   "Order ID": "IN-2012-31958",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10000078",
+   "Sales": 336,
+   "Profit": 23.52
+ },
+ {
+   "Order ID": "IN-2013-78809",
+   "Segment": "Consumer",
+   "Product ID": "FUR-BO-10001155",
+   "Sales": 424.35,
+   "Profit": 25.38
+ },
+ {
+   "Order ID": "IN-2011-77479",
+   "Segment": "Home Office",
+   "Product ID": "FUR-CH-10004163",
+   "Sales": 423.6,
+   "Profit": 84.6
+ },
+ {
+   "Order ID": "IN-2014-15872",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AR-10004749",
+   "Sales": 375.9,
+   "Profit": 7.35
+ },
+ {
+   "Order ID": "IN-2014-75603",
+   "Segment": "Corporate",
+   "Product ID": "OFF-SU-10001618",
+   "Sales": 258.12,
+   "Profit": 92.88
+ },
+ {
+   "Order ID": "IN-2013-22438",
+   "Segment": "Home Office",
+   "Product ID": "FUR-CH-10001477",
+   "Sales": 215.64,
+   "Profit": 92.64
+ },
+ {
+   "Order ID": "IN-2014-65243",
+   "Segment": "Home Office",
+   "Product ID": "TEC-AC-10002833",
+   "Sales": 235.92,
+   "Profit": 51.84
+ },
+ {
+   "Order ID": "IN-2014-65194",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10003640",
+   "Sales": 318.48,
+   "Profit": 6.24
+ },
+ {
+   "Order ID": "IN-2013-73342",
+   "Segment": "Home Office",
+   "Product ID": "FUR-FU-10000394",
+   "Sales": 536.58,
+   "Profit": 252.12
+ },
+ {
+   "Order ID": "IN-2012-40638",
+   "Segment": "Corporate",
+   "Product ID": "TEC-PH-10004675",
+   "Sales": 333.66,
+   "Profit": 103.38
+ },
+ {
+   "Order ID": "IN-2014-76555",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10004589",
+   "Sales": 244.2,
+   "Profit": 34.05
+ },
+ {
+   "Order ID": "IN-2014-11693",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10002499",
+   "Sales": 231.48,
+   "Profit": 30
+ },
+ {
+   "Order ID": "IN-2014-18532",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10000026",
+   "Sales": 264.96,
+   "Profit": 10.56
+ },
+ {
+   "Order ID": "IN-2014-76555",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10001397",
+   "Sales": 310.35,
+   "Profit": 108.6
+ },
+ {
+   "Order ID": "IN-2014-68463",
+   "Segment": "Corporate",
+   "Product ID": "FUR-BO-10004806",
+   "Sales": 149.46,
+   "Profit": 56.79
+ },
+ {
+   "Order ID": "IN-2013-53742",
+   "Segment": "Corporate",
+   "Product ID": "FUR-CH-10002966",
+   "Sales": 360.24,
+   "Profit": 10.8
+ },
+ {
+   "Order ID": "IN-2014-15872",
+   "Segment": "Consumer",
+   "Product ID": "OFF-PA-10000453",
+   "Sales": 392.88,
+   "Profit": 137.28
+ },
+ {
+   "Order ID": "IN-2012-74028",
+   "Segment": "Consumer",
+   "Product ID": "TEC-PH-10004300",
+   "Sales": 272.52,
+   "Profit": 128.04
+ },
+ {
+   "Order ID": "IN-2013-25651",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AR-10003684",
+   "Sales": 149.76,
+   "Profit": 53.91
+ },
+ {
+   "Order ID": "IN-2014-50151",
+   "Segment": "Corporate",
+   "Product ID": "OFF-AP-10002938",
+   "Sales": 169.5,
+   "Profit": 15.24
+ },
+ {
+   "Order ID": "IN-2013-53819",
+   "Segment": "Consumer",
+   "Product ID": "FUR-FU-10004509",
+   "Sales": 180.36,
+   "Profit": 52.2
+ },
+ {
+   "Order ID": "IN-2013-51103",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10002562",
+   "Sales": 158.76,
+   "Profit": 65.07
+ },
+ {
+   "Order ID": "IN-2013-78809",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10003206",
+   "Sales": 193.68,
+   "Profit": 90.96
+ },
+ {
+   "Order ID": "IN-2012-65915",
+   "Segment": "Consumer",
+   "Product ID": "FUR-BO-10001461",
+   "Sales": 196.74,
+   "Profit": 98.37
+ },
+ {
+   "Order ID": "IN-2013-12729",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10004609",
+   "Sales": 200.76,
+   "Profit": 86.28
+ },
+ {
+   "Order ID": "ID-2014-17314",
+   "Segment": "Consumer",
+   "Product ID": "FUR-BO-10000961",
+   "Sales": 312.15,
+   "Profit": -87.45
+ },
+ {
+   "Order ID": "IN-2014-47274",
+   "Segment": "Consumer",
+   "Product ID": "TEC-MA-10002134",
+   "Sales": 940.32,
+   "Profit": 141.03
+ },
+ {
+   "Order ID": "IN-2013-54757",
+   "Segment": "Corporate",
+   "Product ID": "OFF-AR-10000058",
+   "Sales": 157.95,
+   "Profit": 53.64
+ },
+ {
+   "Order ID": "IN-2014-10272",
+   "Segment": "Consumer",
+   "Product ID": "OFF-SU-10001346",
+   "Sales": 284.94,
+   "Profit": 28.44
+ },
+ {
+   "Order ID": "IN-2014-71907",
+   "Segment": "Home Office",
+   "Product ID": "TEC-AC-10004478",
+   "Sales": 277.8,
+   "Profit": 130.5
+ },
+ {
+   "Order ID": "IN-2014-74644",
+   "Segment": "Home Office",
+   "Product ID": "OFF-ST-10001824",
+   "Sales": 120,
+   "Profit": 7.2
+ },
+ {
+   "Order ID": "IN-2012-65915",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AP-10001335",
+   "Sales": 166.14,
+   "Profit": 46.5
+ },
+ {
+   "Order ID": "IN-2014-76016",
+   "Segment": "Corporate",
+   "Product ID": "TEC-AC-10000639",
+   "Sales": 258.75,
+   "Profit": 75.03
+ },
+ {
+   "Order ID": "IN-2014-32084",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10004228",
+   "Sales": 220.56,
+   "Profit": 68.28
+ },
+ {
+   "Order ID": "IN-2012-23054",
+   "Segment": "Consumer",
+   "Product ID": "OFF-EN-10004560",
+   "Sales": 76.5,
+   "Profit": 36.72
+ },
+ {
+   "Order ID": "IN-2012-23957",
+   "Segment": "Corporate",
+   "Product ID": "FUR-CH-10004339",
+   "Sales": 171.42,
+   "Profit": 34.26
+ },
+ {
+   "Order ID": "IN-2013-73342",
+   "Segment": "Home Office",
+   "Product ID": "FUR-CH-10004331",
+   "Sales": 134.91,
+   "Profit": 39.12
+ },
+ {
+   "Order ID": "IN-2012-13919",
+   "Segment": "Home Office",
+   "Product ID": "OFF-AR-10004218",
+   "Sales": 232.08,
+   "Profit": 48.72
+ },
+ {
+   "Order ID": "IN-2014-23922",
+   "Segment": "Consumer",
+   "Product ID": "TEC-CO-10002587",
+   "Sales": 168.6,
+   "Profit": 79.23
+ },
+ {
+   "Order ID": "IN-2013-22746",
+   "Segment": "Home Office",
+   "Product ID": "TEC-MA-10002155",
+   "Sales": 363.06,
+   "Profit": 32.67
+ },
+ {
+   "Order ID": "IN-2014-65243",
+   "Segment": "Home Office",
+   "Product ID": "FUR-CH-10001695",
+   "Sales": 148.5,
+   "Profit": 1.44
+ },
+ {
+   "Order ID": "IN-2011-15165",
+   "Segment": "Home Office",
+   "Product ID": "OFF-SU-10001618",
+   "Sales": 143.4,
+   "Profit": 51.6
+ },
+ {
+   "Order ID": "IN-2011-59286",
+   "Segment": "Consumer",
+   "Product ID": "OFF-PA-10002974",
+   "Sales": 85.23,
+   "Profit": 16.11
+ },
+ {
+   "Order ID": "IN-2011-46581",
+   "Segment": "Home Office",
+   "Product ID": "OFF-EN-10004424",
+   "Sales": 191.28,
+   "Profit": 28.68
+ },
+ {
+   "Order ID": "IN-2013-79306",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10004848",
+   "Sales": 551.1,
+   "Profit": 49.5
+ },
+ {
+   "Order ID": "IN-2013-49857",
+   "Segment": "Consumer",
+   "Product ID": "OFF-PA-10003731",
+   "Sales": 358.92,
+   "Profit": 143.28
+ },
+ {
+   "Order ID": "IN-2012-48548",
+   "Segment": "Consumer",
+   "Product ID": "OFF-SU-10000649",
+   "Sales": 177.6,
+   "Profit": 1.65
+ },
+ {
+   "Order ID": "IN-2012-62765",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10000483",
+   "Sales": 224.82,
+   "Profit": 6.72
+ },
+ {
+   "Order ID": "IN-2012-67735",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10002243",
+   "Sales": 414.9,
+   "Profit": 124.35
+ },
+ {
+   "Order ID": "IN-2013-49857",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10003276",
+   "Sales": 775.62,
+   "Profit": 224.91
+ },
+ {
+   "Order ID": "IN-2012-10720",
+   "Segment": "Consumer",
+   "Product ID": "TEC-MA-10002340",
+   "Sales": 241.32,
+   "Profit": 82.02
+ },
+ {
+   "Order ID": "IN-2012-59874",
+   "Segment": "Corporate",
+   "Product ID": "OFF-ST-10000892",
+   "Sales": 213.12,
+   "Profit": 95.88
+ },
+ {
+   "Order ID": "IN-2012-29977",
+   "Segment": "Consumer",
+   "Product ID": "TEC-PH-10002154",
+   "Sales": 448.65,
+   "Profit": 107.55
+ },
+ {
+   "Order ID": "IN-2014-75603",
+   "Segment": "Corporate",
+   "Product ID": "TEC-AC-10002255",
+   "Sales": 276.6,
+   "Profit": 105
+ },
+ {
+   "Order ID": "IN-2014-38531",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10003445",
+   "Sales": 155.85,
+   "Profit": 4.65
+ },
+ {
+   "Order ID": "IN-2014-34576",
+   "Segment": "Home Office",
+   "Product ID": "TEC-AC-10001664",
+   "Sales": 163.38,
+   "Profit": 45.72
+ },
+ {
+   "Order ID": "IN-2011-69751",
+   "Segment": "Consumer",
+   "Product ID": "TEC-CO-10000778",
+   "Sales": 340.08,
+   "Profit": 33.96
+ },
+ {
+   "Order ID": "IN-2012-48240",
+   "Segment": "Corporate",
+   "Product ID": "OFF-BI-10004589",
+   "Sales": 97.68,
+   "Profit": 13.62
+ },
+ {
+   "Order ID": "IN-2014-19120",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10004334",
+   "Sales": 245.13,
+   "Profit": 85.77
+ },
+ {
+   "Order ID": "IN-2014-32028",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10001465",
+   "Sales": 327.3,
+   "Profit": 150.54
+ },
+ {
+   "Order ID": "IN-2013-78809",
+   "Segment": "Consumer",
+   "Product ID": "OFF-SU-10003085",
+   "Sales": 99,
+   "Profit": 7.92
+ },
+ {
+   "Order ID": "IN-2011-69450",
+   "Segment": "Corporate",
+   "Product ID": "OFF-SU-10001762",
+   "Sales": 198.84,
+   "Profit": 63.6
+ },
+ {
+   "Order ID": "IN-2012-24230",
+   "Segment": "Home Office",
+   "Product ID": "TEC-PH-10001640",
+   "Sales": 292.2,
+   "Profit": 119.76
+ },
+ {
+   "Order ID": "IN-2011-23712",
+   "Segment": "Corporate",
+   "Product ID": "OFF-BI-10001312",
+   "Sales": 254.34,
+   "Profit": 106.65
+ },
+ {
+   "Order ID": "IN-2012-47757",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10004668",
+   "Sales": 146.88,
+   "Profit": 23.49
+ },
+ {
+   "Order ID": "IN-2011-70584",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10003965",
+   "Sales": 261.24,
+   "Profit": 101.88
+ },
+ {
+   "Order ID": "IN-2011-29928",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10001463",
+   "Sales": 191.28,
+   "Profit": 34.32
+ },
+ {
+   "Order ID": "IN-2014-63374",
+   "Segment": "Home Office",
+   "Product ID": "OFF-BI-10002562",
+   "Sales": 105.84,
+   "Profit": 43.38
+ },
+ {
+   "Order ID": "IN-2011-57704",
+   "Segment": "Consumer",
+   "Product ID": "FUR-FU-10002292",
+   "Sales": 132.03,
+   "Profit": 54.09
+ },
+ {
+   "Order ID": "IN-2012-11476",
+   "Segment": "Corporate",
+   "Product ID": "OFF-EN-10001627",
+   "Sales": 254.85,
+   "Profit": 30.45
+ },
+ {
+   "Order ID": "IN-2012-70836",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10004562",
+   "Sales": 172.08,
+   "Profit": 6.84
+ },
+ {
+   "Order ID": "IN-2011-47309",
+   "Segment": "Consumer",
+   "Product ID": "OFF-PA-10003381",
+   "Sales": 93.18,
+   "Profit": 23.28
+ },
+ {
+   "Order ID": "IN-2011-77479",
+   "Segment": "Home Office",
+   "Product ID": "FUR-FU-10000815",
+   "Sales": 150.48,
+   "Profit": 28.53
+ },
+ {
+   "Order ID": "IN-2012-16166",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10000287",
+   "Sales": 119.85,
+   "Profit": 34.65
+ },
+ {
+   "Order ID": "IN-2012-11476",
+   "Segment": "Corporate",
+   "Product ID": "OFF-PA-10003252",
+   "Sales": 91.53,
+   "Profit": 0
+ },
+ {
+   "Order ID": "IN-2014-71256",
+   "Segment": "Home Office",
+   "Product ID": "OFF-ST-10004365",
+   "Sales": 170.73,
+   "Profit": 80.19
+ },
+ {
+   "Order ID": "ID-2011-11392",
+   "Segment": "Consumer",
+   "Product ID": "OFF-LA-10002575",
+   "Sales": 68.94,
+   "Profit": -63.54
+ },
+ {
+   "Order ID": "IN-2012-40897",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AR-10000851",
+   "Sales": 227.4,
+   "Profit": 49.95
+ },
+ {
+   "Order ID": "IN-2014-71907",
+   "Segment": "Home Office",
+   "Product ID": "OFF-SU-10003537",
+   "Sales": 151.83,
+   "Profit": 42.42
+ },
+ {
+   "Order ID": "IN-2012-35143",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10002881",
+   "Sales": 146.88,
+   "Profit": 2.88
+ },
+ {
+   "Order ID": "IN-2014-19120",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10003123",
+   "Sales": 159.3,
+   "Profit": 27
+ },
+ {
+   "Order ID": "IN-2012-59874",
+   "Segment": "Corporate",
+   "Product ID": "FUR-FU-10000735",
+   "Sales": 325.8,
+   "Profit": 48.87
+ },
+ {
+   "Order ID": "IN-2014-68463",
+   "Segment": "Corporate",
+   "Product ID": "TEC-MA-10001358",
+   "Sales": 149.04,
+   "Profit": 65.52
+ },
+ {
+   "Order ID": "IN-2013-76667",
+   "Segment": "Corporate",
+   "Product ID": "OFF-SU-10000970",
+   "Sales": 146.04,
+   "Profit": 18.96
+ },
+ {
+   "Order ID": "IN-2013-35017",
+   "Segment": "Home Office",
+   "Product ID": "OFF-EN-10004418",
+   "Sales": 43.5,
+   "Profit": 6
+ },
+ {
+   "Order ID": "IN-2012-24783",
+   "Segment": "Corporate",
+   "Product ID": "OFF-PA-10003390",
+   "Sales": 141.9,
+   "Profit": 8.4
+ },
+ {
+   "Order ID": "IN-2014-71907",
+   "Segment": "Home Office",
+   "Product ID": "FUR-CH-10002412",
+   "Sales": 85.44,
+   "Profit": 0.84
+ },
+ {
+   "Order ID": "IN-2014-75267",
+   "Segment": "Home Office",
+   "Product ID": "TEC-CO-10004689",
+   "Sales": 148.59,
+   "Profit": 28.23
+ },
+ {
+   "Order ID": "IN-2014-76555",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10003354",
+   "Sales": 87.06,
+   "Profit": 0.84
+ },
+ {
+   "Order ID": "IN-2013-60007",
+   "Segment": "Consumer",
+   "Product ID": "TEC-CO-10003250",
+   "Sales": 427.59,
+   "Profit": 128.25
+ },
+ {
+   "Order ID": "IN-2011-29592",
+   "Segment": "Corporate",
+   "Product ID": "FUR-FU-10000666",
+   "Sales": 109.89,
+   "Profit": 29.67
+ },
+ {
+   "Order ID": "IN-2013-61841",
+   "Segment": "Consumer",
+   "Product ID": "TEC-PH-10003430",
+   "Sales": 277.14,
+   "Profit": 38.76
+ },
+ {
+   "Order ID": "IN-2011-31496",
+   "Segment": "Home Office",
+   "Product ID": "OFF-PA-10000070",
+   "Sales": 79.38,
+   "Profit": 25.38
+ },
+ {
+   "Order ID": "IN-2014-53707",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10002932",
+   "Sales": 149.58,
+   "Profit": 14.94
+ },
+ {
+   "Order ID": "ID-2014-23642",
+   "Segment": "Corporate",
+   "Product ID": "FUR-CH-10004580",
+   "Sales": 86.895,
+   "Profit": -33.075
+ },
+ {
+   "Order ID": "IN-2014-19673",
+   "Segment": "Corporate",
+   "Product ID": "OFF-BI-10004666",
+   "Sales": 100.92,
+   "Profit": 45.36
+ },
+ {
+   "Order ID": "IN-2014-11427",
+   "Segment": "Home Office",
+   "Product ID": "FUR-FU-10000496",
+   "Sales": 169.74,
+   "Profit": 79.74
+ },
+ {
+   "Order ID": "IN-2012-53042",
+   "Segment": "Home Office",
+   "Product ID": "OFF-LA-10002875",
+   "Sales": 71.04,
+   "Profit": 21.84
+ },
+ {
+   "Order ID": "IN-2011-62982",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10001835",
+   "Sales": 126.63,
+   "Profit": 17.64
+ },
+ {
+   "Order ID": "IN-2014-10475",
+   "Segment": "Consumer",
+   "Product ID": "OFF-LA-10000707",
+   "Sales": 43.2,
+   "Profit": 1.2
+ },
+ {
+   "Order ID": "IN-2014-70724",
+   "Segment": "Consumer",
+   "Product ID": "OFF-SU-10002709",
+   "Sales": 118.2,
+   "Profit": 48.36
+ },
+ {
+   "Order ID": "IN-2013-78809",
+   "Segment": "Consumer",
+   "Product ID": "OFF-PA-10001327",
+   "Sales": 144.99,
+   "Profit": 12.96
+ },
+ {
+   "Order ID": "IN-2013-54757",
+   "Segment": "Corporate",
+   "Product ID": "FUR-CH-10001756",
+   "Sales": 96.9,
+   "Profit": 41.64
+ },
+ {
+   "Order ID": "IN-2014-71256",
+   "Segment": "Home Office",
+   "Product ID": "OFF-EN-10004473",
+   "Sales": 194.64,
+   "Profit": 9.72
+ },
+ {
+   "Order ID": "IN-2014-52412",
+   "Segment": "Consumer",
+   "Product ID": "TEC-MA-10000776",
+   "Sales": 156.87,
+   "Profit": 39.15
+ },
+ {
+   "Order ID": "IN-2014-76016",
+   "Segment": "Corporate",
+   "Product ID": "OFF-PA-10004741",
+   "Sales": 210.24,
+   "Profit": 10.44
+ },
+ {
+   "Order ID": "IN-2014-38531",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AP-10003032",
+   "Sales": 3410.82,
+   "Profit": 136.26
+ },
+ {
+   "Order ID": "IN-2011-47309",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10003142",
+   "Sales": 76.68,
+   "Profit": 0
+ },
+ {
+   "Order ID": "IN-2012-48240",
+   "Segment": "Corporate",
+   "Product ID": "OFF-LA-10002992",
+   "Sales": 49.35,
+   "Profit": 0.45
+ },
+ {
+   "Order ID": "IN-2014-10272",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AP-10000904",
+   "Sales": 118.08,
+   "Profit": 25.92
+ },
+ {
+   "Order ID": "IN-2014-19673",
+   "Segment": "Corporate",
+   "Product ID": "OFF-EN-10002425",
+   "Sales": 74.76,
+   "Profit": 2.16
+ },
+ {
+   "Order ID": "IN-2014-10272",
+   "Segment": "Consumer",
+   "Product ID": "OFF-SU-10002445",
+   "Sales": 338.4,
+   "Profit": 97.92
+ },
+ {
+   "Order ID": "ID-2014-23642",
+   "Segment": "Corporate",
+   "Product ID": "OFF-ST-10003411",
+   "Sales": 70.56,
+   "Profit": -49.41
+ },
+ {
+   "Order ID": "IN-2012-40946",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10000721",
+   "Sales": 140.1,
+   "Profit": 5.4
+ },
+ {
+   "Order ID": "IN-2011-77479",
+   "Segment": "Home Office",
+   "Product ID": "TEC-AC-10004938",
+   "Sales": 122.13,
+   "Profit": 17.01
+ },
+ {
+   "Order ID": "IN-2014-51187",
+   "Segment": "Consumer",
+   "Product ID": "OFF-EN-10000296",
+   "Sales": 84.75,
+   "Profit": 6.75
+ },
+ {
+   "Order ID": "IN-2011-59286",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10000757",
+   "Sales": 32.85,
+   "Profit": 13.41
+ },
+ {
+   "Order ID": "IN-2011-22585",
+   "Segment": "Home Office",
+   "Product ID": "OFF-ST-10004583",
+   "Sales": 145.35,
+   "Profit": 7.2
+ },
+ {
+   "Order ID": "IN-2014-72565",
+   "Segment": "Corporate",
+   "Product ID": "OFF-BI-10004120",
+   "Sales": 95.85,
+   "Profit": 22.95
+ },
+ {
+   "Order ID": "IN-2013-50410",
+   "Segment": "Home Office",
+   "Product ID": "OFF-ST-10003256",
+   "Sales": 94.98,
+   "Profit": 0
+ },
+ {
+   "Order ID": "IN-2013-73342",
+   "Segment": "Home Office",
+   "Product ID": "OFF-SU-10000283",
+   "Sales": 85.14,
+   "Profit": 13.59
+ },
+ {
+   "Order ID": "IN-2013-15683",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10000896",
+   "Sales": 177.75,
+   "Profit": 30.15
+ },
+ {
+   "Order ID": "IN-2014-65243",
+   "Segment": "Home Office",
+   "Product ID": "OFF-PA-10002022",
+   "Sales": 49.02,
+   "Profit": 1.44
+ },
+ {
+   "Order ID": "IN-2014-19120",
+   "Segment": "Consumer",
+   "Product ID": "TEC-AC-10001600",
+   "Sales": 115.5,
+   "Profit": 49.62
+ },
+ {
+   "Order ID": "IN-2013-49857",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10000351",
+   "Sales": 175.77,
+   "Profit": 64.98
+ },
+ {
+   "Order ID": "IN-2014-63374",
+   "Segment": "Home Office",
+   "Product ID": "OFF-EN-10002700",
+   "Sales": 50.46,
+   "Profit": 17.64
+ },
+ {
+   "Order ID": "IN-2013-68449",
+   "Segment": "Corporate",
+   "Product ID": "OFF-ST-10002240",
+   "Sales": 86.76,
+   "Profit": -38.25
+ },
+ {
+   "Order ID": "IN-2013-31825",
+   "Segment": "Corporate",
+   "Product ID": "FUR-CH-10002932",
+   "Sales": 149.58,
+   "Profit": 14.94
+ },
+ {
+   "Order ID": "IN-2012-55282",
+   "Segment": "Consumer",
+   "Product ID": "OFF-PA-10000453",
+   "Sales": 343.77,
+   "Profit": 120.12
+ },
+ {
+   "Order ID": "IN-2011-46504",
+   "Segment": "Consumer",
+   "Product ID": "OFF-SU-10002742",
+   "Sales": 118.35,
+   "Profit": 36.63
+ },
+ {
+   "Order ID": "IN-2012-59874",
+   "Segment": "Corporate",
+   "Product ID": "OFF-BI-10000721",
+   "Sales": 84.06,
+   "Profit": 3.24
+ },
+ {
+   "Order ID": "IN-2013-32063",
+   "Segment": "Corporate",
+   "Product ID": "OFF-AR-10002747",
+   "Sales": 109.8,
+   "Profit": 43.92
+ },
+ {
+   "Order ID": "ID-2012-32623",
+   "Segment": "Consumer",
+   "Product ID": "TEC-PH-10000922",
+   "Sales": 109.665,
+   "Profit": -30.735
+ },
+ {
+   "Order ID": "IN-2013-74350",
+   "Segment": "Corporate",
+   "Product ID": "OFF-LA-10002575",
+   "Sales": 34.47,
+   "Profit": 1.35
+ },
+ {
+   "Order ID": "IN-2011-29928",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10004651",
+   "Sales": 147.69,
+   "Profit": 67.86
+ },
+ {
+   "Order ID": "IN-2014-16439",
+   "Segment": "Corporate",
+   "Product ID": "OFF-SU-10003789",
+   "Sales": 69.84,
+   "Profit": 27.9
+ },
+ {
+   "Order ID": "IN-2014-45258",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AR-10004148",
+   "Sales": 56.85,
+   "Profit": 10.8
+ },
+ {
+   "Order ID": "IN-2012-44278",
+   "Segment": "Home Office",
+   "Product ID": "OFF-BI-10002364",
+   "Sales": 49.95,
+   "Profit": 13.41
+ },
+ {
+   "Order ID": "IN-2011-51740",
+   "Segment": "Corporate",
+   "Product ID": "OFF-FA-10003819",
+   "Sales": 41.85,
+   "Profit": 14.22
+ },
+ {
+   "Order ID": "IN-2014-51187",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10004868",
+   "Sales": 60.3,
+   "Profit": 1.8
+ },
+ {
+   "Order ID": "IN-2011-17594",
+   "Segment": "Consumer",
+   "Product ID": "TEC-PH-10002601",
+   "Sales": 642.78,
+   "Profit": 25.71
+ },
+ {
+   "Order ID": "IN-2012-59874",
+   "Segment": "Corporate",
+   "Product ID": "TEC-MA-10003682",
+   "Sales": 166.5,
+   "Profit": 19.98
+ },
+ {
+   "Order ID": "IN-2012-49500",
+   "Segment": "Corporate",
+   "Product ID": "OFF-PA-10003784",
+   "Sales": 55.98,
+   "Profit": 27.96
+ },
+ {
+   "Order ID": "IN-2012-43459",
+   "Segment": "Corporate",
+   "Product ID": "OFF-LA-10004848",
+   "Sales": 58.65,
+   "Profit": 25.2
+ },
+ {
+   "Order ID": "IN-2013-69331",
+   "Segment": "Consumer",
+   "Product ID": "FUR-FU-10002525",
+   "Sales": 85.14,
+   "Profit": 39.96
+ },
+ {
+   "Order ID": "IN-2011-23712",
+   "Segment": "Corporate",
+   "Product ID": "OFF-BI-10001659",
+   "Sales": 65.34,
+   "Profit": 11.61
+ },
+ {
+   "Order ID": "IN-2011-60826",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10004228",
+   "Sales": 55.14,
+   "Profit": 17.07
+ },
+ {
+   "Order ID": "IN-2013-51103",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10003582",
+   "Sales": 52.56,
+   "Profit": 18.9
+ },
+ {
+   "Order ID": "IN-2012-47757",
+   "Segment": "Consumer",
+   "Product ID": "OFF-SU-10001689",
+   "Sales": 78.84,
+   "Profit": 1.56
+ },
+ {
+   "Order ID": "IN-2013-53819",
+   "Segment": "Consumer",
+   "Product ID": "OFF-EN-10004755",
+   "Sales": 61.47,
+   "Profit": 16.56
+ },
+ {
+   "Order ID": "IN-2014-51719",
+   "Segment": "Corporate",
+   "Product ID": "OFF-ST-10001694",
+   "Sales": 69.96,
+   "Profit": 22.32
+ },
+ {
+   "Order ID": "IN-2014-15872",
+   "Segment": "Consumer",
+   "Product ID": "OFF-LA-10001731",
+   "Sales": 52.8,
+   "Profit": 10.5
+ },
+ {
+   "Order ID": "IN-2014-65194",
+   "Segment": "Consumer",
+   "Product ID": "OFF-EN-10000947",
+   "Sales": 81.9,
+   "Profit": 33.54
+ },
+ {
+   "Order ID": "IN-2012-17986",
+   "Segment": "Corporate",
+   "Product ID": "OFF-LA-10000658",
+   "Sales": 61.2,
+   "Profit": 21.9
+ },
+ {
+   "Order ID": "IN-2012-55282",
+   "Segment": "Consumer",
+   "Product ID": "FUR-FU-10000714",
+   "Sales": 94.65,
+   "Profit": 14.1
+ },
+ {
+   "Order ID": "IN-2014-18672",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10004606",
+   "Sales": 20.46,
+   "Profit": 1.02
+ },
+ {
+   "Order ID": "ID-2011-41863",
+   "Segment": "Corporate",
+   "Product ID": "TEC-AC-10002086",
+   "Sales": 118.935,
+   "Profit": -4.815
+ },
+ {
+   "Order ID": "IN-2013-34030",
+   "Segment": "Consumer",
+   "Product ID": "OFF-PA-10000344",
+   "Sales": 63.36,
+   "Profit": 31.68
+ },
+ {
+   "Order ID": "IN-2012-31958",
+   "Segment": "Consumer",
+   "Product ID": "OFF-LA-10000879",
+   "Sales": 42.3,
+   "Profit": 19.35
+ },
+ {
+   "Order ID": "IN-2014-65194",
+   "Segment": "Consumer",
+   "Product ID": "OFF-LA-10000425",
+   "Sales": 58.35,
+   "Profit": 23.25
+ },
+ {
+   "Order ID": "IN-2012-33218",
+   "Segment": "Home Office",
+   "Product ID": "OFF-FA-10002539",
+   "Sales": 65.04,
+   "Profit": 9
+ },
+ {
+   "Order ID": "IN-2014-71907",
+   "Segment": "Home Office",
+   "Product ID": "OFF-EN-10002434",
+   "Sales": 50.58,
+   "Profit": 15.66
+ },
+ {
+   "Order ID": "IN-2012-65915",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AR-10004651",
+   "Sales": 46.44,
+   "Profit": 6.48
+ },
+ {
+   "Order ID": "IN-2014-65243",
+   "Segment": "Home Office",
+   "Product ID": "OFF-SU-10004846",
+   "Sales": 69,
+   "Profit": 19.32
+ },
+ {
+   "Order ID": "IN-2014-19120",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AR-10002109",
+   "Sales": 95.16,
+   "Profit": 26.64
+ },
+ {
+   "Order ID": "IN-2013-78809",
+   "Segment": "Consumer",
+   "Product ID": "OFF-PA-10004335",
+   "Sales": 59.34,
+   "Profit": 16.56
+ },
+ {
+   "Order ID": "IN-2011-51740",
+   "Segment": "Corporate",
+   "Product ID": "OFF-EN-10000296",
+   "Sales": 50.85,
+   "Profit": 4.05
+ },
+ {
+   "Order ID": "IN-2014-63374",
+   "Segment": "Home Office",
+   "Product ID": "OFF-LA-10004062",
+   "Sales": 41.04,
+   "Profit": 18.84
+ },
+ {
+   "Order ID": "IN-2014-75267",
+   "Segment": "Home Office",
+   "Product ID": "OFF-PA-10001236",
+   "Sales": 44.82,
+   "Profit": 2.64
+ },
+ {
+   "Order ID": "IN-2014-32084",
+   "Segment": "Consumer",
+   "Product ID": "OFF-EN-10001528",
+   "Sales": 45.72,
+   "Profit": 6.39
+ },
+ {
+   "Order ID": "IN-2012-65915",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10003161",
+   "Sales": 47.52,
+   "Profit": 19.44
+ },
+ {
+   "Order ID": "IN-2012-24783",
+   "Segment": "Corporate",
+   "Product ID": "FUR-FU-10001343",
+   "Sales": 120.48,
+   "Profit": 25.2
+ },
+ {
+   "Order ID": "IN-2014-32028",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10004659",
+   "Sales": 51.84,
+   "Profit": 16.56
+ },
+ {
+   "Order ID": "ID-2013-69464",
+   "Segment": "Corporate",
+   "Product ID": "OFF-LA-10001383",
+   "Sales": 38.04,
+   "Profit": -0.84
+ },
+ {
+   "Order ID": "IN-2012-23054",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10003893",
+   "Sales": 41.58,
+   "Profit": 7.02
+ },
+ {
+   "Order ID": "IN-2012-55282",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10004795",
+   "Sales": 57,
+   "Profit": 0.45
+ },
+ {
+   "Order ID": "IN-2013-74952",
+   "Segment": "Consumer",
+   "Product ID": "OFF-PA-10003686",
+   "Sales": 75.69,
+   "Profit": 2.25
+ },
+ {
+   "Order ID": "IN-2014-48632",
+   "Segment": "Corporate",
+   "Product ID": "OFF-FA-10003161",
+   "Sales": 59.4,
+   "Profit": 24.3
+ },
+ {
+   "Order ID": "IN-2012-48240",
+   "Segment": "Corporate",
+   "Product ID": "OFF-LA-10001658",
+   "Sales": 30.12,
+   "Profit": 3.84
+ },
+ {
+   "Order ID": "IN-2014-11427",
+   "Segment": "Home Office",
+   "Product ID": "OFF-ST-10004703",
+   "Sales": 46.5,
+   "Profit": 9.3
+ },
+ {
+   "Order ID": "IN-2012-24230",
+   "Segment": "Home Office",
+   "Product ID": "OFF-PA-10002047",
+   "Sales": 210.12,
+   "Profit": 25.2
+ },
+ {
+   "Order ID": "IN-2014-23922",
+   "Segment": "Consumer",
+   "Product ID": "OFF-PA-10003943",
+   "Sales": 62.34,
+   "Profit": 13.68
+ },
+ {
+   "Order ID": "IN-2011-77479",
+   "Segment": "Home Office",
+   "Product ID": "OFF-LA-10001191",
+   "Sales": 34.2,
+   "Profit": 12.6
+ },
+ {
+   "Order ID": "IN-2012-62765",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10003745",
+   "Sales": 33.6,
+   "Profit": 10.74
+ },
+ {
+   "Order ID": "IN-2014-44012",
+   "Segment": "Home Office",
+   "Product ID": "OFF-BI-10003142",
+   "Sales": 38.34,
+   "Profit": 0
+ },
+ {
+   "Order ID": "IN-2012-70619",
+   "Segment": "Home Office",
+   "Product ID": "FUR-CH-10004572",
+   "Sales": 61.62,
+   "Profit": 23.4
+ },
+ {
+   "Order ID": "IN-2012-13919",
+   "Segment": "Home Office",
+   "Product ID": "OFF-AR-10000720",
+   "Sales": 50.7,
+   "Profit": 10.14
+ },
+ {
+   "Order ID": "IN-2012-48240",
+   "Segment": "Corporate",
+   "Product ID": "OFF-EN-10002556",
+   "Sales": 68.16,
+   "Profit": 29.28
+ },
+ {
+   "Order ID": "IN-2013-78809",
+   "Segment": "Consumer",
+   "Product ID": "FUR-FU-10002459",
+   "Sales": 43.86,
+   "Profit": 5.25
+ },
+ {
+   "Order ID": "ID-2014-17314",
+   "Segment": "Consumer",
+   "Product ID": "OFF-SU-10001343",
+   "Sales": 22.53,
+   "Profit": -17.13
+ },
+ {
+   "Order ID": "IN-2014-78991",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10003340",
+   "Sales": 26.82,
+   "Profit": 6.12
+ },
+ {
+   "Order ID": "IN-2013-78809",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AR-10000249",
+   "Sales": 34.02,
+   "Profit": 11.22
+ },
+ {
+   "Order ID": "ID-2011-11392",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10000697",
+   "Sales": 16.02,
+   "Profit": -11.58
+ },
+ {
+   "Order ID": "IN-2014-75603",
+   "Segment": "Corporate",
+   "Product ID": "FUR-BO-10000670",
+   "Sales": 364.59,
+   "Profit": 153.09
+ },
+ {
+   "Order ID": "IN-2012-46903",
+   "Segment": "Corporate",
+   "Product ID": "OFF-BI-10003806",
+   "Sales": 44.31,
+   "Profit": 21.21
+ },
+ {
+   "Order ID": "IN-2014-70724",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10004483",
+   "Sales": 33.48,
+   "Profit": 1.32
+ },
+ {
+   "Order ID": "IN-2014-75603",
+   "Segment": "Corporate",
+   "Product ID": "OFF-ST-10001824",
+   "Sales": 72,
+   "Profit": 4.32
+ },
+ {
+   "Order ID": "IN-2013-76667",
+   "Segment": "Corporate",
+   "Product ID": "OFF-LA-10000271",
+   "Sales": 45.12,
+   "Profit": 21.12
+ },
+ {
+   "Order ID": "IN-2013-60007",
+   "Segment": "Consumer",
+   "Product ID": "OFF-LA-10002493",
+   "Sales": 32.13,
+   "Profit": 3.78
+ },
+ {
+   "Order ID": "IN-2011-60826",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10000248",
+   "Sales": 27.96,
+   "Profit": 13.98
+ },
+ {
+   "Order ID": "IN-2012-33218",
+   "Segment": "Home Office",
+   "Product ID": "FUR-TA-10001359",
+   "Sales": 851.67,
+   "Profit": 76.59
+ },
+ {
+   "Order ID": "IN-2011-47309",
+   "Segment": "Consumer",
+   "Product ID": "OFF-LA-10002992",
+   "Sales": 39.48,
+   "Profit": 0.36
+ },
+ {
+   "Order ID": "IN-2013-61617",
+   "Segment": "Corporate",
+   "Product ID": "OFF-ST-10003121",
+   "Sales": 48.9,
+   "Profit": 6.84
+ },
+ {
+   "Order ID": "IN-2012-26113",
+   "Segment": "Consumer",
+   "Product ID": "OFF-PA-10003906",
+   "Sales": 41.22,
+   "Profit": 18.54
+ },
+ {
+   "Order ID": "IN-2014-19673",
+   "Segment": "Corporate",
+   "Product ID": "OFF-LA-10004114",
+   "Sales": 26.82,
+   "Profit": 7.74
+ },
+ {
+   "Order ID": "IN-2012-33218",
+   "Segment": "Home Office",
+   "Product ID": "OFF-ST-10003088",
+   "Sales": 37.5,
+   "Profit": 6
+ },
+ {
+   "Order ID": "IN-2013-72901",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10002636",
+   "Sales": 31.14,
+   "Profit": 2.43
+ },
+ {
+   "Order ID": "IN-2011-61176",
+   "Segment": "Corporate",
+   "Product ID": "OFF-EN-10000383",
+   "Sales": 30,
+   "Profit": 6.3
+ },
+ {
+   "Order ID": "IN-2011-23712",
+   "Segment": "Corporate",
+   "Product ID": "OFF-BI-10004436",
+   "Sales": 28.08,
+   "Profit": 0.48
+ },
+ {
+   "Order ID": "IN-2014-16579",
+   "Segment": "Corporate",
+   "Product ID": "TEC-AC-10004566",
+   "Sales": 40.92,
+   "Profit": 13.89
+ },
+ {
+   "Order ID": "IN-2012-13919",
+   "Segment": "Home Office",
+   "Product ID": "OFF-FA-10003833",
+   "Sales": 56.76,
+   "Profit": 3.96
+ },
+ {
+   "Order ID": "IN-2011-57704",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10001659",
+   "Sales": 29.04,
+   "Profit": 5.16
+ },
+ {
+   "Order ID": "IN-2012-65915",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10004910",
+   "Sales": 24.93,
+   "Profit": 1.71
+ },
+ {
+   "Order ID": "IN-2012-67735",
+   "Segment": "Consumer",
+   "Product ID": "FUR-CH-10004913",
+   "Sales": 422.73,
+   "Profit": 46.44
+ },
+ {
+   "Order ID": "IN-2014-75603",
+   "Segment": "Corporate",
+   "Product ID": "OFF-FA-10000263",
+   "Sales": 39.42,
+   "Profit": 17.28
+ },
+ {
+   "Order ID": "IN-2014-19120",
+   "Segment": "Consumer",
+   "Product ID": "OFF-SU-10004705",
+   "Sales": 33.39,
+   "Profit": 4.32
+ },
+ {
+   "Order ID": "IN-2011-17594",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10001526",
+   "Sales": 31.92,
+   "Profit": 10.2
+ },
+ {
+   "Order ID": "IN-2012-59874",
+   "Segment": "Corporate",
+   "Product ID": "OFF-EN-10003601",
+   "Sales": 29.7,
+   "Profit": 0
+ },
+ {
+   "Order ID": "IN-2014-63374",
+   "Segment": "Home Office",
+   "Product ID": "OFF-BI-10001867",
+   "Sales": 27.36,
+   "Profit": 8.7
+ },
+ {
+   "Order ID": "IN-2014-48632",
+   "Segment": "Corporate",
+   "Product ID": "OFF-AR-10001922",
+   "Sales": 33.3,
+   "Profit": 5.94
+ },
+ {
+   "Order ID": "IN-2013-78809",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10000549",
+   "Sales": 21.96,
+   "Profit": 2.58
+ },
+ {
+   "Order ID": "IN-2011-45993",
+   "Segment": "Corporate",
+   "Product ID": "OFF-LA-10004894",
+   "Sales": 44.76,
+   "Profit": 20.04
+ },
+ {
+   "Order ID": "IN-2014-71256",
+   "Segment": "Home Office",
+   "Product ID": "OFF-FA-10001297",
+   "Sales": 43.08,
+   "Profit": 8.16
+ },
+ {
+   "Order ID": "IN-2013-31825",
+   "Segment": "Corporate",
+   "Product ID": "OFF-AR-10003446",
+   "Sales": 66.33,
+   "Profit": 0
+ },
+ {
+   "Order ID": "IN-2013-78809",
+   "Segment": "Consumer",
+   "Product ID": "OFF-LA-10004114",
+   "Sales": 26.82,
+   "Profit": 7.74
+ },
+ {
+   "Order ID": "IN-2014-76016",
+   "Segment": "Corporate",
+   "Product ID": "OFF-EN-10002427",
+   "Sales": 23.49,
+   "Profit": 1.62
+ },
+ {
+   "Order ID": "ID-2013-69464",
+   "Segment": "Corporate",
+   "Product ID": "OFF-ST-10003445",
+   "Sales": 15.585,
+   "Profit": -14.655
+ },
+ {
+   "Order ID": "IN-2014-23922",
+   "Segment": "Consumer",
+   "Product ID": "OFF-LA-10000216",
+   "Sales": 18.27,
+   "Profit": 2.7
+ },
+ {
+   "Order ID": "IN-2013-76667",
+   "Segment": "Corporate",
+   "Product ID": "OFF-LA-10000635",
+   "Sales": 23.7,
+   "Profit": 9.48
+ },
+ {
+   "Order ID": "IN-2013-61617",
+   "Segment": "Corporate",
+   "Product ID": "OFF-LA-10002364",
+   "Sales": 22.86,
+   "Profit": 6.6
+ },
+ {
+   "Order ID": "IN-2012-48548",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AR-10004153",
+   "Sales": 16.86,
+   "Profit": 7.92
+ },
+ {
+   "Order ID": "IN-2012-40638",
+   "Segment": "Corporate",
+   "Product ID": "OFF-AR-10004424",
+   "Sales": 26.37,
+   "Profit": 1.29
+ },
+ {
+   "Order ID": "IN-2014-34863",
+   "Segment": "Consumer",
+   "Product ID": "OFF-ST-10000268",
+   "Sales": 21.54,
+   "Profit": 6
+ },
+ {
+   "Order ID": "IN-2012-70619",
+   "Segment": "Home Office",
+   "Product ID": "OFF-AR-10000242",
+   "Sales": 29.01,
+   "Profit": 5.22
+ },
+ {
+   "Order ID": "IN-2014-53707",
+   "Segment": "Consumer",
+   "Product ID": "OFF-LA-10003678",
+   "Sales": 35.25,
+   "Profit": 0
+ },
+ {
+   "Order ID": "IN-2013-49857",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10003604",
+   "Sales": 22.68,
+   "Profit": 3.12
+ },
+ {
+   "Order ID": "IN-2012-46903",
+   "Segment": "Corporate",
+   "Product ID": "OFF-SU-10004705",
+   "Sales": 33.39,
+   "Profit": 4.32
+ },
+ {
+   "Order ID": "IN-2012-55282",
+   "Segment": "Consumer",
+   "Product ID": "OFF-SU-10003537",
+   "Sales": 43.38,
+   "Profit": 12.12
+ },
+ {
+   "Order ID": "ID-2011-58726",
+   "Segment": "Consumer",
+   "Product ID": "OFF-LA-10003848",
+   "Sales": 23.775,
+   "Profit": -21.525
+ },
+ {
+   "Order ID": "IN-2011-69450",
+   "Segment": "Corporate",
+   "Product ID": "FUR-FU-10003540",
+   "Sales": 70.44,
+   "Profit": 25.32
+ },
+ {
+   "Order ID": "IN-2013-53819",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AR-10004148",
+   "Sales": 22.74,
+   "Profit": 4.32
+ },
+ {
+   "Order ID": "IN-2012-35143",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10001096",
+   "Sales": 30.3,
+   "Profit": 10.56
+ },
+ {
+   "Order ID": "IN-2014-43872",
+   "Segment": "Home Office",
+   "Product ID": "FUR-FU-10000556",
+   "Sales": 15.96,
+   "Profit": 2.37
+ },
+ {
+   "Order ID": "IN-2011-29928",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10002301",
+   "Sales": 16.02,
+   "Profit": 5.58
+ },
+ {
+   "Order ID": "IN-2013-68449",
+   "Segment": "Corporate",
+   "Product ID": "OFF-EN-10002613",
+   "Sales": 9.6,
+   "Profit": -7.32
+ },
+ {
+   "Order ID": "IN-2014-15872",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10001272",
+   "Sales": 11.52,
+   "Profit": 3.78
+ },
+ {
+   "Order ID": "IN-2013-79306",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10003874",
+   "Sales": 11.58,
+   "Profit": 2.04
+ },
+ {
+   "Order ID": "IN-2014-32084",
+   "Segment": "Consumer",
+   "Product ID": "OFF-AR-10002144",
+   "Sales": 30.15,
+   "Profit": 13.5
+ },
+ {
+   "Order ID": "ID-2012-32623",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10004795",
+   "Sales": 22.8,
+   "Profit": -22.44
+ },
+ {
+   "Order ID": "IN-2012-26113",
+   "Segment": "Consumer",
+   "Product ID": "OFF-FA-10002156",
+   "Sales": 43.65,
+   "Profit": 5.22
+ },
+ {
+   "Order ID": "IN-2011-29067",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10000168",
+   "Sales": 11.4,
+   "Profit": 2.82
+ },
+ {
+   "Order ID": "IN-2014-41898",
+   "Segment": "Consumer",
+   "Product ID": "OFF-SU-10002961",
+   "Sales": 10.26,
+   "Profit": 2.76
+ },
+ {
+   "Order ID": "IN-2012-53420",
+   "Segment": "Corporate",
+   "Product ID": "OFF-BI-10003012",
+   "Sales": 4.53,
+   "Profit": 1.92
+ },
+ {
+   "Order ID": "IN-2012-48548",
+   "Segment": "Consumer",
+   "Product ID": "OFF-BI-10004440",
+   "Sales": 27.66,
+   "Profit": 6.6
+ },
+ {
+   "Order ID": "IN-2011-23712",
+   "Segment": "Corporate",
+   "Product ID": "OFF-AR-10004614",
+   "Sales": 58.44,
+   "Profit": 19.26
+ }
+]

@@ -1,0 +1,215 @@
+Spring Core - Intro
+
+Creating simple Spring Project
+
+1. Learn about maven
+2. Create Maven Project and Adding Spring Dependencies
+3. learn about POM.xml
+4. Create Beans and Dependency injection
+5. How to resolve Conflicts
+6. Understand different scope of beans
+
+
+1. Maven Project: kind of build tool
+Unmanaged Java Project
+
+Framework in large enterprise.
+
+For developing big enterprise, need hundred of jars
+Downloading these hundred of jar files from different websites and adding them
+to the classpath can be a tedious job
+This is where Maven helps
+Add the dependancy to Maven which will in-turn download and add to the classpath
+
+What is Maven? It is Software application build tool
+Primary used to download files Mainly .jar files
+
+Standard Project Structure
+Helps in compiling, building and deploying a Software
+Autogenerate the document of the Code
+
+external jars are also called as API Plugins
+Jar is a set of class, interface, enums, and annotations zipped to .jars
+Mostly provided by third party vendors
+API plugin need to added separately into the application classpath
+
+Ex. Spring Framework
+    JDBC Type 4 Driver
+
+
+
+Archtype  - Type of project
+
+Artifact Coordinates
+
+Attributes
+
+1. groupid - identify the projects -- reverse of domain
+2. ArtifactId - unique identifier,
+3. Version - Which Version
+
+.idea - cast file of intellij
+
+src - all class files
+
+resource - custom files anything which is not java code
+
+test - any test which need to executed
+
+Main part is adding dependency
+
+
+POM.xml - Project Object Model - Most Imp. File - Contain all the metadata
+all jar files, resides in base directory
+
+Addl. Reading - https://www.geeksforgeeks.org/introduction-apache-maven-build-automation-tool-java-projects/
+
+
+Bean creation
+
+1. How to create Beans
+2. Different Ways to Create Beans
+3. Different Methods to Create Beans
+
+How Spring create Beans?
+
+Basically objects in spring called as Beans
+
+Three Ways create Beans
+1. xml - default way (traditional way)
+2. java - provide a type of factory class that contains methods and return
+to objects of the dependency class, Spring container executes these method
+to instantiate the dependency class, factory class to be marked with
+@Configuration annotation
+3. annotation - useful, flexible and powerful, easier way for configuring Beans
+@Component
+
+
+Dependency Injection:
+
+in the String in Field Injection
+
+
+@Autowired annotation
+
+field injection
+Setter injection
+constructor injection
+
+Syntax
+
+@Component
+public class Service(){
+
+}
+
+@Autowired
+private service service
+
+@Override
+public void service(Datatype object)
+}
+}
+
+Assignment
+
+Hands-On Activity
+In this segment, you will create a class and will perform dependency injection.
+ The steps that you need to perform for this are as follows:
+
+
+
+Step 1: Create a class named ‘Calculator’ in the com.upgrad package and mark it
+with the correct annotation for object creation. This Calculator class depends
+ on the AdditionService class, which you created in the previous segment.
+
+
+
+Step 2: In this class, inject the dependencies for the class created previously
+using the correct annotation. Use field injection for dependency injection.
+
+
+
+Step 3: The Calculator class has a method named compute(), which takes three
+arguments. The first argument is of type String, and it contains the operation
+that you want to perform. This argument can be addition, subtraction,
+multiplication or division. Currently, your application supports only
+addition. In the upcoming segments, you will create more implementations
+of the MathService interface to add these operations. The second and
+the third arguments that the compute() method takes are the integers
+on which the operation is to be performed. The method does not return
+anything. And, the method should be public.
+
+
+
+Step 4: After creating the method, you need to update the method.
+The method should call the operate() method depending on the first argument,
+which has been passed to the method. If the argument passed is ‘add’,
+then it should return the operate() method defined in the AdditionService class.
+ If the argument is not a valid one, then it should throw an exception.
+
+
+
+Step 5: Create one more class named ‘App’ in the com.upgrad package.
+Inside this class, create the main method. Use the ApplicationContext
+to get the bean of the Calculator class. Once you have the bean of the
+Calculator class, call the compute() method present inside this class.
+Pass ‘add’ as the first argument, and for the second and the third arguments,
+pass two integer values. The compute() method, in turn, should call the operate()
+method defined in the class corresponding to the first argument of the
+compute() method.
+
+
+Dependency Injection - Criteria
+
+1. Property & Setter Injection - May not be initialized at the beginning of the
+Class and can be changed over the time (NOT CRITICAL)
+
+2. Constructor Injection - When the dependencies are critical, Need to
+initialize at the beginning itself.
+
+
+
+Resolving Conflicts
+
+@Qualifier - Used for resolving Conflicts
+
+Resolve when we have multiple Beans
+
+
+Bean Scope
+
+When you mark a class with @Component, the spring container will treat that
+class as a dependency and instantiate that class to crate a bean.
+
+Default, Spring creates one bean per dependency class, but you can Control
+this feature using the @Scope annotation.
+
+Different Scopes of Bean in Spring
+Types of Scope
+1. Singleton - whenever bean is being requested from Spring Container, it will be the
+same, One Copy Only
+2. Prototype - for every request new bean being passed, Stateful Systems
+3. Request - New Bean will be created
+4. Session - for New Session new bean
+5. Global-Session - for every global session, should be unique bean
+
+In most cases, Singleton or Prototype is being used.
+
+three are applicable only in case of web-aware ApplicationContext
+
+Singleton - Default Scope.
+
+Best Described as One Bean per @Component Class per IoC Container
+
+Gives the same Bean reference everytime when request is made of bean using
+the getBean().
+
+Stateless Beans
+
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE / SCOPE_SINGLETON)
+
+Request - Spring container gives a single bean per http Request
+Session - Spring container gives a single bean per http session (User-level Session)
+Global-Session - Spring container gives a single bean per global http session
+(application-level session)

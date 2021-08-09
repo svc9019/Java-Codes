@@ -1,0 +1,12 @@
+
+
+Graded Question 1
+
+select teacher_name from teacher
+where course = (select course from marks
+group by course
+order by avg(marks) desc limit 1)
+
+select month(payment_date) as Payment_month,count(payment_id) as No_of_payments
+from payment group by Payment_month
+order by No_of_payments desc limit 1
