@@ -1,0 +1,53 @@
+<<<<<<< HEAD
+Live Session - Spring and Spring Boot
+
+It has opinionated view and third party libraries
+
+Cold start-up time - Mainly in cloud
+
+Alternatives - Micronaut
+
+Issues with Spring Boot - Start-up Time
+
+Struts ???
+
+Creating New Project via https://start.spring.io
+
+Add Dependencies
+  - Web API
+  - H2 Database - In-Memory DB
+  - JPA (Java Persistence API)
+
+
+Cockroach DB - Getting Popular
+
+Key Promotor X - Shows Recommendation on Shortcuts
+
+www.keybr.com
+=======
+Live Session - Spring and Spring Boot
+
+It has opinionated view and third party libraries
+
+Cold start-up time - Mainly in cloud
+
+Alternatives - Micronaut
+
+Issues with Spring Boot - Start-up Time
+
+Struts ???
+
+Creating New Project via https://start.spring.io
+
+Add Dependencies
+  - Web API
+  - H2 Database - In-Memory DB
+  - JPA (Java Persistence API)
+
+
+Cockroach DB - Getting Popular
+
+Key Promotor X - Shows Recommendation on Shortcuts
+
+www.keybr.com
+>>>>>>> 95aa346ff08d13ff03d54be2acc35bd83859abaf
